@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aumkesh Chaudhary - Digital Architect</title>
     <!-- Font Awesome for icons -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap');
-        
         
         * {
             margin: 0;
@@ -257,6 +254,182 @@
             color: #9370DB;
         }
         
+        .education-info {
+            text-align: center;
+            background: rgba(30, 30, 30, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            margin-top: 2rem;
+        }
+        
+        .cpi-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #8A2BE2, #9370DB);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        .experience-item {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .experience-item:hover::before {
+            left: 100%;
+        }
+        
+        .experience-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(138, 43, 226, 0.2);
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .experience-title {
+            color: #9370DB;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-company {
+            color: #b19cd9;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-date {
+            color: #dda0dd;
+            font-size: 0.9rem;
+            background: rgba(138, 43, 226, 0.2);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+        }
+        
+        .experience-description {
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .experience-points {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .experience-points li {
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .experience-points li::before {
+            content: '▸';
+            color: #9370DB;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .project-card {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .project-card:hover::before {
+            left: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(138, 43, 226, 0.3);
+        }
+        
+        .project-title {
+            color: #9370DB;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .project-description {
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .project-highlights {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .project-highlights li {
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 0.6rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .project-highlights li::before {
+            content: '✦';
+            color: #9370DB;
+            position: absolute;
+            left: 0;
+        }
+        
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -361,6 +534,37 @@
             z-index: 1;
         }
         
+        .extracurricular-card {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .extracurricular-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .extracurricular-card:hover::before {
+            left: 100%;
+        }
+        
+        .extracurricular-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(138, 43, 226, 0.2);
+        }
+        
         @media (max-width: 768px) {
             .name {
                 font-size: 2.5rem;
@@ -372,13 +576,23 @@
             
             .about-grid,
             .skills-grid,
-            .contact-grid {
+            .contact-grid,
+            .project-grid {
                 grid-template-columns: 1fr;
             }
             
             .section {
                 transform: none;
                 margin: 2rem 0;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .experience-date {
+                margin-top: 0.5rem;
             }
         }
     </style>
@@ -412,6 +626,143 @@
         </div>
 
         <div class="section">
+            <h2 class="section-title">🎓 Education</h2>
+            <div class="education-info">
+                <h3 style="color: #9370DB; font-size: 1.5rem; margin-bottom: 1rem;">Indian Institute of Technology, Patna</h3>
+                <p style="font-size: 1.2rem; color: #b19cd9; margin-bottom: 1rem;">Bachelor of Science (Honours) in Computer Science and Data Analytics</p>
+                <div class="cpi-badge">CPI: 9.12</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💼 Work Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Research Intern</div>
+                        <div class="experience-company">Ahmedabad University (On-site)</div>
+                        <div style="color: #dda0dd; font-size: 0.9rem; margin-top: 0.5rem;">
+                            Project: Understanding Decision Making and Coordination in Animal Groups<br>
+                            Supervisor: Dr. Jitesh Jhawar — Funded by Max Planck Society, Germany
+                        </div>
+                    </div>
+                    <div class="experience-date">May 2025 – June 2025</div>
+                </div>
+                <ul class="experience-points">
+                    <li>Studied collective behavior in animal groups via simulations and mathematical modeling</li>
+                    <li>Processed and annotated video data collected daily over 4 months, labeling frames with multiple bird species for behavior and identity tagging</li>
+                    <li>Used YOLO architecture to detect and analyze species-specific behaviors in datasets of birds</li>
+                    <li>Utilized Idtrackerai to track ants and spiders, rendering trajectory data to visualize movement paths and group dynamics</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Project Intern</div>
+                        <div class="experience-company">IIT Mandi iHub and HCi Foundation (Remote)</div>
+                    </div>
+                    <div class="experience-date">Apr 2025 – June 2025</div>
+                </div>
+                <ul class="experience-points">
+                    <li>Contributed to backend development of a web platform for coursework and user management</li>
+                    <li>Built core features using Django, integrated REST APIs, and managed data pipelines with SQLite</li>
+                    <li>Ensured system reliability through modular code design and efficient database handling</li>
+                    <li>Collaborated with cross-functional teams to design scalable backend logic supporting multi-user roles and secure data access</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+    <h2 class="section-title">🚀 Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <div class="project-title">CareerNavigator</div>
+            <div class="project-description">
+                Developed CareerNavigator, a Machine Learning model that evaluates candidates’ employability by analyzing key attributes and predicting suitability for a job role.
+            </div>
+            <ul class="project-highlights">
+                <li>Cleaned, pre-processed, and performed feature engineering on the dataset containing 70k+ datapoints.</li>
+                <li>Designed, trained, and evaluated multiple algorithms, utilizing performance metrics such as accuracy, confusion matrix, and F1-score to optimize model effectiveness.</li>
+                <li>Selected kernel support vector machine as the best-fit model with the highest accuracy of 80% and F1 score of 0.82.</li>
+                <li>Presented findings to a panel of faculty and industry experts, receiving recognition for its innovation and effectiveness.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">AudeX: Vision-to-Speech Model</div>
+            <div class="project-description">
+                Developed a dynamic web application combining Optical Character Recognition (OCR) and Text-to-Speech (TTS) technologies to improve accessibility.
+            </div>
+            <ul class="project-highlights">
+                <li>Integrated Tesseract for multi language OCR and Web Speech API for TTS, enabling accurate text extraction from images and high-quality text-to-speech conversion.</li>
+                <li>Designed a responsive interface with intuitive navigation, ensuring a seamless user experience.</li>
+                <li>Enabled PDF export, word/character count, and keyword search for efficient document handling.</li>
+                <li>Developed functionality for managing user profiles, such as signup, login, activity tracking, and editable data.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Advanced Text to Speech Optimization</div>
+            <div class="project-description">
+                Fine-tuned Microsoft's SpeechT5 model to improve pronunciation of Technical English Terms focusing on modifying the phonetic representation to ensure precise pronunciation of abbreviations and acronyms.
+            </div>
+            <ul class="project-highlights">
+                <li>Achieved a 25% enhancement in speech quality over the baseline TTS model, as reflected in a significant Mean Opinion Score (MOS) improvement, with notable enhancements in handling technical terms.</li>
+                <li>Optimized the baseline model to generate a Native Italian Voice by enhancing pronunciation, prosody, and stress patterns in line with the phonological rules of the Italian language, significantly improving speech quality and naturalness compared to other existing models.</li>
+                <li>Harnessed tools like Transformers, PyTorch, and Hugging Face Datasets to implement advanced machine learning and NLP techniques, ensuring optimal model performance and reliability.</li>
+                <li>Implemented 8-bit dynamic quantization to linear layers using PyTorch’s native API, reducing memory usage by 30% while maintaining inference accuracy.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Computer Vision Object Detection System</div>
+            <div class="project-description">
+                Developed an object detection system utilizing YOLOv5 and PyTorch, designed to capture and process individual videos and photos for object detection.
+            </div>
+            <ul class="project-highlights">
+                <li>Optimized the computer vision pipeline to achieve 20+ FPS processing speed for 640x640 input resolution.</li>
+                <li>Created a visualization system to render detection results with color-coded bounding boxes and confidence scores ranging from 0 to 1.</li>
+                <li>Applied non-maximum suppression with IoU threshold of 0.3 for optimal detection accuracy.</li>
+                <li>Added support for over 80 COCO dataset object types, with confidence threshold filtering at 0.3.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Solar Panel Detection System</div>
+            <div class="project-description">
+                Developed an object detection model using YOLOv8n to identify and locate solar panels in low resolution satellite imagery.
+            </div>
+            <ul class="project-highlights">
+                <li>Processed and annotated a comprehensive dataset of 29,625 solar panel instances with high precision.</li>
+                <li>Achieved 94.27% precision and 91.77% recall, significantly improving solar infrastructure mapping capabilities.</li>
+                <li>Implemented sophisticated object detection techniques with mean Average Precision (mAP50) of 96.8%.</li>
+                <li>Designed and deployed an optimized real-time inference pipeline, hosting it on Hugging Face for seamless accessibility and large-scale solar panel detection.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="section">
+            <h2 class="section-title">🎵 Extracurricular Activities</h2>
+            <div class="about-grid">
+                <div class="extracurricular-card">
+                    <h3 style="color: #9370DB; margin-bottom: 1rem;">🎹 Piano</h3>
+                    <p>7+ years of experience in classical and contemporary styles. Actively compose original pieces that explore and innovate across diverse genres and elements of music.</p>
+                </div>
+                <div class="extracurricular-card">
+                    <h3 style="color: #9370DB; margin-bottom: 1rem;">🎸 Guitar</h3>
+                    <p>2+ years of experience in Indian and western contemporary styles. Exploring fingerstyle techniques and songwriting.</p>
+                </div>
+                <div class="extracurricular-card">
+                    <h3 style="color: #9370DB; margin-bottom: 1rem;">📺 Content Creation</h3>
+                    <p>YouTube Channel featuring original musical compositions and performances across various genres and styles.</p>
+                </div>
+            </div>
+        </div>
+
+       <div class="section">
             <h2 class="section-title">Technical Competence</h2>
             <div class="skills-grid">
                 <div class="skill-item">
@@ -453,26 +804,7 @@
             </div>
         </div>
 
-        <div class="section">
-            <h2 class="section-title"> Current Explorations</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3 style="color: #9370DB; margin-bottom: 1rem;">🧮 Scientific Computing</h3>
-                    <p>Delving into advanced mathematical modeling and computational simulations that bridge theoretical concepts with practical applications.</p>
-                </div>
-                <div class="about-card">
-                    <h3 style="color: #9370DB; margin-bottom: 1rem;">🎯 Advanced ML</h3>
-                    <p>Mastering Reinforcement Learning, Bayesian Inference, and cutting-edge Deep Learning architectures for Vision and Language processing.</p>
-                </div>
-                <div class="about-card">
-    <h3 style="color: #6B8E23; margin-bottom: 1rem;">🌿 Ecology</h3>
-    <p>Investigating the complex interactions within ecosystems using computational approaches, with a focus on understanding animal behavior and environmental dynamics.</p>
-</div>
-
-            </div>
-        </div>
-
-        <div class="section">
+         <div class="section">
     <h2 class="section-title">🌐 Connect with Me</h2>
     <div class="contact-grid">
         <a href="mailto:aumkeshchaudhary@gmail.com" class="contact-link">
@@ -495,9 +827,7 @@
         </a>
     </div>
 </div>
-
-
-        <div class="quote">
+<div class="quote">
             The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.
             <br><br>
             <em>— Albert Einstein</em>
