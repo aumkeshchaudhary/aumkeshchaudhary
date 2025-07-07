@@ -14,7 +14,4 @@ Advanced ML Techniques | Research Methodologies | Applied Data Analytics
 
 👤 **Pronouns**: he/him
 
----
-
-> “Striving to blend rigorous computation with real-world impact — one project at a time.”
 
