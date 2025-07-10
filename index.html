@@ -1043,7 +1043,7 @@ function toggleMoreProjects() {
         // JavaScript unchanged – stars, typing effect, particles, etc.
         // Keep all existing JavaScript as-is
         
-    (() => {
+   (() => {
     const toggleBtn = document.querySelector('.toggle-button');
     const menu = document.querySelector('.menu-items');
 
@@ -1053,21 +1053,42 @@ function toggleMoreProjects() {
         menu.classList.toggle('active');
     }
 
+    function closeMenu() {
+        toggleBtn.classList.remove('active');
+        menu.classList.remove('active');
+    }
+
     function closeMenuOnClickOutside(e) {
         if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
-            toggleBtn.classList.remove('active');
-            menu.classList.remove('active');
+            closeMenu();
+        }
+    }
+
+    function closeMenuOnVisibilityChange() {
+        if (document.hidden) {
+            closeMenu();
         }
     }
 
     function initMenuToggle() {
         if (!toggleBtn || !menu) return;
+
         toggleBtn.addEventListener('click', toggleMenu);
         document.addEventListener('click', closeMenuOnClickOutside);
+
+        // Close on scroll
+        window.addEventListener('scroll', closeMenu);
+
+        // Close on tab switch
+        document.addEventListener('visibilitychange', closeMenuOnVisibilityChange);
+
+        // Optional: close on window resize
+        window.addEventListener('resize', closeMenu);
     }
 
     document.addEventListener('DOMContentLoaded', initMenuToggle);
 })();
+
 
 
        
