@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aumkesh Chaudhary - Digital Architect</title>
+    <title>Aumkesh Chaudhary</title>
+    <link rel="icon" type="image/x-icon" href="https://www.iitp.ac.in/images/favicon.ico">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap');
         
@@ -159,10 +156,6 @@
             animation: twinkle 3s infinite;
         }
         
-        @keyframes twinkle {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 1; }
-        }
         
 
         .container {
@@ -478,14 +471,14 @@
         }
 
         .project-link {
-    color: inherit;
-    text-decoration: none;
-}
+            color: inherit;
+            text-decoration: none;
+        }
 
-.project-link:hover {
-    color: inherit;
-    text-decoration: underline;
-}
+        .project-link:hover {
+            color: inherit;
+            text-decoration: underline;
+        }
         
         .project-grid {
             display: grid;
@@ -692,25 +685,96 @@
             box-shadow: 0 15px 30px rgba(138, 43, 226, 0.2);
         }
         
+        /* Enhanced Mobile Responsive Styles */
         @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .toggle-menu {
+                top: 15px;
+                left: 15px;
+            }
+            
+            .toggle-button {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .toggle-button i {
+                font-size: 1rem;
+            }
+            
+            .menu-items {
+                min-width: 180px;
+                top: 60px;
+            }
+            
+            .hero {
+                padding: 2rem 0;
+            }
+            
             .name {
                 font-size: 2.5rem;
+                transform: none;
+                line-height: 1.2;
             }
             
-            .section-title {
-                font-size: 2rem;
+            .subtitle {
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                margin-bottom: 1.5rem;
             }
             
-            .about-grid,
-            .skills-grid,
-            .contact-grid,
-            .project-grid {
-                grid-template-columns: 1fr;
+            .typing-effect {
+                font-size: 1rem;
+                margin-bottom: 2rem;
             }
             
             .section {
-                transform: none;
                 margin: 2rem 0;
+                padding: 1.5rem;
+                transform: none;
+                border-radius: 15px;
+            }
+            
+            .section:hover {
+                transform: none;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .about-card {
+                padding: 1.5rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+                gap: 1rem;
+            }
+            
+            .skill-item {
+                padding: 1rem;
+            }
+            
+            .skill-icon {
+                font-size: 1.5rem;
+            }
+            
+            .education-info {
+                padding: 1.5rem;
+            }
+            
+            .experience-item {
+                padding: 1.5rem;
             }
             
             .experience-header {
@@ -718,28 +782,391 @@
                 align-items: flex-start;
             }
             
+            .experience-title {
+                font-size: 1.2rem;
+            }
+            
+            .experience-company {
+                font-size: 1rem;
+            }
+            
             .experience-date {
                 margin-top: 0.5rem;
+                font-size: 0.8rem;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .project-card {
+                padding: 1.5rem;
+            }
+            
+            .project-title {
+                font-size: 1.2rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .contact-link {
+                padding: 1rem;
+            }
+            
+            .quote {
+                font-size: 1.1rem;
+                padding: 1.5rem;
+                margin: 2rem 0;
+            }
+            
+            .quote::before,
+            .quote::after {
+                font-size: 3rem;
+            }
+            
+            .quote::before {
+                top: -0.5rem;
+                left: 0.5rem;
+            }
+            
+            .quote::after {
+                bottom: -2rem;
+                right: 0.5rem;
+            }
+            
+            .extracurricular-card {
+                padding: 1.5rem;
+            }
+            
+            .cpi-badge {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+            
+            .experience-points li,
+            .project-highlights li {
+                font-size: 0.95rem;
+                padding-left: 1.2rem;
+            }
+        }
+        
+        /* Extra small screens (phones in portrait) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0.5rem;
+            }
+            
+            .hero {
+                padding: 1.5rem 0;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .typing-effect {
+                font-size: 0.9rem;
+            }
+            
+            .section {
+                margin: 1.5rem 0;
+                padding: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .about-card,
+            .experience-item,
+            .project-card,
+            .extracurricular-card {
+                padding: 1rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+                gap: 0.8rem;
+            }
+            
+            .skill-item {
+                padding: 0.8rem;
+            }
+            
+            .skill-icon {
+                font-size: 1.2rem;
+            }
+            
+            .experience-title {
+                font-size: 1.1rem;
+            }
+            
+            .experience-company {
+                font-size: 0.9rem;
+            }
+            
+            .project-title {
+                font-size: 1.1rem;
+            }
+            
+            .contact-link {
+                padding: 0.8rem;
+            }
+            
+            .quote {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+            
+            .quote::before,
+            .quote::after {
+                font-size: 2.5rem;
+            }
+            
+            .menu-items {
+                min-width: 160px;
+                padding: 0.8rem;
+            }
+            
+            .menu-item {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* Landscape phones and small tablets */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .hero {
+                padding: 1.5rem 0;
+            }
+            
+            .name {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                margin: 1.5rem 0;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            }
+        }
+        
+        /* Touch-friendly improvements */
+        @media (max-width: 768px) {
+            .menu-item,
+            .contact-link,
+            .skill-item,
+            .project-card,
+            .experience-item {
+                min-height: 44px; /* Minimum touch target size */
+            }
+            
+            .toggle-button {
+                min-width: 44px;
+                min-height: 44px;
+            }
+            
+            /* Reduce hover effects on touch devices */
+            .about-card:hover,
+            .skill-item:hover,
+            .experience-item:hover,
+            .project-card:hover,
+            .extracurricular-card:hover {
+                transform: none;
+            }
+            
+            .section:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+
+        /* Header styles */
+        .main-header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(20,20,20,0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(138,43,226,0.3);
+            box-shadow: 0 2px 24px rgba(138,43,226,0.08);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0;
+            transition: background 0.3s;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-family: 'Cinzel', serif;
+            color: #b19cd9;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.4rem 1rem;
+            border-radius: 12px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link:focus {
+            background: linear-gradient(90deg, #8A2BE2 0%, #9370DB 100%);
+            color: #fff;
+            box-shadow: 0 2px 12px rgba(138,43,226,0.15);
+            outline: none;
+        }
+
+        /* Dropdown styles for CV/Transcript */
+        .menu-bar {
+            position: relative;
+            margin-left: 1rem;
+        }
+
+        .menu-bar-btn {
+            background: linear-gradient(45deg, #8A2BE2, #9370DB);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 12px rgba(138,43,226,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-bar-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(138,43,226,0.3);
+            background: linear-gradient(45deg, #9370DB, #8A2BE2);
+        }
+
+        .menu-bar-btn:active {
+            transform: scale(0.95);
+        }
+
+        .menu-bar-btn i {
+            transition: opacity 0.3s ease;
+        }
+
+        .menu-bar-btn.active {
+            background: linear-gradient(45deg, #9370DB, #8A2BE2);
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .menu-bar-dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 45px;
+            background: rgba(30,30,30,0.98);
+            border-radius: 12px;
+            min-width: 160px;
+            box-shadow: 0 4px 24px rgba(138,43,226,0.12);
+            border: 1px solid rgba(138,43,226,0.2);
+            z-index: 999;
+            padding: 0.5rem 0;
+        }
+
+        .menu-bar-dropdown.show {
+            display: block;
+        }
+
+        .menu-bar-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            color: #b19cd9;
+            text-decoration: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-family: 'Cinzel', serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-bar-dropdown a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .menu-bar-dropdown a:hover {
+            background: linear-gradient(90deg, #8A2BE2, #9370DB);
+            color: #fff;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(138, 43, 226, 0.3);
+        }
+        
+        .menu-bar-dropdown a:hover::before {
+            left: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-bar {
+                gap: 0.5rem;
+                flex-wrap: wrap;
+            }
+            .nav-link {
+                font-size: 0.95rem;
+                padding: 0.3rem 0.7rem;
             }
         }
     </style>
 </head>
 <body>
-     <div class="toggle-menu">
-        <button class="toggle-button" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="menu-items" id="menuItems">
-            <a href="#" class="menu-item" onclick="window.open('https://drive.google.com/file/d/19QzuMYg4f74OgVMu4mIZmiQNhljgR_SU/view?usp=sharing', '_blank')">
-                <i class="fas fa-file-pdf"></i>
-                <span>CV</span>
-            </a>
-            <a href="#" class="menu-item" onclick="window.open('https://drive.google.com/file/d/1NOlcB86cwvNn2CKsEWEdGicRtpYOJ5-u/view?usp=sharing', '_blank')">
-                <i class="fas fa-certificate"></i>
-                <span>Transcript</span>
-            </a>
-        </div>
-    </div>
+    <!-- Header (edited) -->
+    <header class="main-header">
+        <nav class="nav-bar">
+            <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+            <a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a>
+            <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+            <a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a>
+            <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+            <!-- CV/Transcript Dropdown -->
+            <div class="menu-bar">
+                <button class="menu-bar-btn" id="menuBarBtn">
+                    <i class="fas fa-user-graduate"></i>
+                </button>
+                <div class="menu-bar-dropdown" id="menuBarDropdown">
+                    <a href="https://drive.google.com/file/d/19QzuMYg4f74OgVMu4mIZmiQNhljgR_SU/view?usp=sharing" target="_blank">
+                        <i class="fas fa-file-pdf"></i> CV
+                    </a>
+                    <a href="https://drive.google.com/file/d/1NOlcB86cwvNn2CKsEWEdGicRtpYOJ5-u/view?usp=sharing" target="_blank">
+                        <i class="fas fa-certificate"></i> Transcript
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div class="stars"></div>
 
     <div class="container">
@@ -749,7 +1176,7 @@
             <div class="typing-effect" id="typing-text"></div>
         </div>
 
-        <div class="section">
+        <div class="section" id="about">
             <h2 class="section-title">∞ About Me</h2>
             <div class="about-grid">
                 <div class="about-card">
@@ -767,7 +1194,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="education">
             <h2 class="section-title"> Education</h2>
             <div class="education-info">
                 <h3 style="color: #9370DB; font-size: 1.5rem; margin-bottom: 1rem;">Indian Institute of Technology, Patna</h3>
@@ -776,7 +1203,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="experience">
             <h2 class="section-title">Work Experience</h2>
             
             <div class="experience-item">
@@ -819,7 +1246,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="projects">
     <h2 class="section-title">Projects</h2>
     <div class="project-grid">
 
@@ -943,7 +1370,7 @@ function toggleMoreProjects() {
 </script>
 
 
-        <div class="section">
+        <div class="section" id="extracurricular">
             <h2 class="section-title"> Extracurricular Activities</h2>
             <div class="about-grid">
                 <div class="extracurricular-card">
@@ -957,7 +1384,7 @@ function toggleMoreProjects() {
             </div>
         </div>
 
-       <div class="section">
+       <div class="section" id="skills">
     <h2 class="section-title">Technical Competence</h2>
     
     <div class="skills-category"><strong>Languages</strong></div>
@@ -997,7 +1424,7 @@ function toggleMoreProjects() {
 </div>
 
 
-         <div class="section">
+         <div class="section" id="contact">
     <h2 class="section-title">🌐 Connect with Me</h2>
     <div class="contact-grid">
         <a href="mailto:aumkeshchaudhary@gmail.com" class="contact-link">
@@ -1040,10 +1467,41 @@ function toggleMoreProjects() {
     <div class="floating-element floating-orb" style="bottom: 20%; left: 20%; animation-delay: -4s;"></div>
 
     <script>
-        // JavaScript unchanged – stars, typing effect, particles, etc.
-        // Keep all existing JavaScript as-is
-        
-   (() => {
+        // Menu handling for CV/Transcript dropdown
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBarBtn = document.getElementById('menuBarBtn');
+            const menuBarDropdown = document.getElementById('menuBarDropdown');
+
+            if (menuBarBtn && menuBarDropdown) {
+                // Toggle dropdown
+                menuBarBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    menuBarDropdown.classList.toggle('show');
+                    menuBarBtn.classList.toggle('active');
+                });
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!menuBarDropdown.contains(e.target) && !menuBarBtn.contains(e.target)) {
+                        menuBarDropdown.classList.remove('show');
+                    }
+                });
+
+                // Close on scroll
+                window.addEventListener('scroll', function() {
+                    menuBarDropdown.classList.remove('show');
+                });
+
+                // Close on resize
+                window.addEventListener('resize', function() {
+                    menuBarDropdown.classList.remove('show');
+                });
+            }
+        });
+
+        // Rest of your existing scripts
+        // ...existing code...
+        (() => {
     const toggleBtn = document.querySelector('.toggle-button');
     const menu = document.querySelector('.menu-items');
 
@@ -1088,10 +1546,8 @@ function toggleMoreProjects() {
 
     document.addEventListener('DOMContentLoaded', initMenuToggle);
 })();
-
-
-
-       
+ 
+   
         
         function createStars() {
             const starsContainer = document.querySelector('.stars');
@@ -1220,5 +1676,10 @@ function toggleMoreProjects() {
             observer.observe(section);
         });
     </script>
+
+    <!-- Footer -->
+    <footer style="width:100%; background:rgba(20,20,20,0.95); border-top:1px solid rgba(138,43,226,0.3); padding:1rem 0; text-align:center; margin-top:2rem; font-size:1rem; color:#b19cd9;">
+        &copy; 2025 Aumkesh Chaudhary &mdash; Made with <i class="fas fa-heart" style="color:#9370DB;"></i> | <a href="mailto:aumkeshchaudhary@gmail.com" style="color:#dda0dd; text-decoration:none;">Contact</a>
+    </footer>
 </body>
 </html>
