@@ -1106,7 +1106,7 @@ body {
                     <i class="fas fa-user-graduate"></i>
                 </button>
                 <div class="menu-bar-dropdown" id="menuBarDropdown">
-                    <a href="https://drive.google.com/file/d/19QzuMYg4f74OgVMu4mIZmiQNhljgR_SU/view?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/1_K2URU-Gv2AZjieGBovi3s_MQKDEU1BC/view?usp=sharing" target="_blank">
                         <i class="fas fa-file-pdf"></i> CV
                     </a>
                     <a href="https://drive.google.com/file/d/1NOlcB86cwvNn2CKsEWEdGicRtpYOJ5-u/view?usp=sharing" target="_blank">
@@ -1173,7 +1173,7 @@ body {
                     <li>Configured a multi-user Linux workstation with fstab-based persistent disk mounting, user environment
                         management, and centralized Anaconda deployment for shared computational workflows</li>
                     <li>Processed and annotated video data collected daily over 4 months, labeling frames with multiple bird species for behavior and identity tagging</li>
-                    <li>Used YOLO architecture to detect and analyze species-specific behaviors in datasets of birds</li>
+                    <li>Adapted YOLO architecture for multi-species bird detection and species-specific behavior analysis</li>
                     <li>Utilized Idtrackerai to track ants and spiders, rendering trajectory data to visualize movement paths and group dynamics</li>
                 </ul>
             </div>
@@ -1184,21 +1184,17 @@ body {
                         <div class="experience-title">Project Intern</div>
                         <div class="experience-company">IIT Mandi iHub and HCi Foundation (Remote)</div>
                     </div>
-                    <div class="experience-date">Apr 2025 – June 2025</div>
+                    <div class="experience-date">Apr 2025 – July 2025</div>
                 </div>
                 <ul class="experience-points">
-                    <li>Contributed to backend development of a web platform for coursework and multi-user management</li>
-                    <li>Designed and implemented interactive dashboards for both students and instructors, enabling role-specific
-                        access, activity tracking, and course progress visualization</li>
-                    <li>Built core features using Django, integrated REST APIs, and managed structured data pipelines with
-                        SQLite.</li>
-                    <li>Developed a robust user-management system supporting role-based permissions, secure content access,
-                        and separate instructor/student workflows</li>
-                    <li>Integrated Google OAuth 2.0 for secure authentication and streamlined login 
-                        functionality</li>
-                    <li>Ensured system reliability through modular code design, efficient query handling, and optimized backend logic</li>
-                    <li>Collaborated with cross-functional teams to architect scalable backend workflows and enforce security best
-                        practices</li>
+                    <li>Developed backend infrastructure for an educational platform using Django, including role-based access
+                        control, REST APIs, and OAuth 2.0 authentication, supporting 1,000+ users across student and instructor
+                        workflows</li>
+                    <li>Designed and implemented interactive dashboards for students and instructors, enabling activity tracking,
+                        course progress visualization, role-based permissions, and secure content access with separate workflows for
+                        each user type</li>
+                    <li>Collaborated with cross-functional teams to architect scalable backend solutions and enforce security best
+                        practices across the platform.</li>
                 </ul>
             </div>
         </div>
@@ -1207,26 +1203,8 @@ body {
     <h2 class="section-title">Projects</h2>
     <div class="project-grid">
 
-        <!-- 1. CareerNavigator -->
-        <div class="project-card">
-            <div class="project-title">
-                <a href="https://huggingface.co/spaces/Aumkeshchy2003/CareerNavigator" class="project-link" target="_blank">
-                    CareerNavigator
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-            <div class="project-description">
-                Developed CareerNavigator, a Machine Learning model that evaluates candidates' employability by analyzing key attributes and predicting suitability for a job role.
-            </div>
-            <ul class="project-highlights">
-                <li>Cleaned, pre-processed, and performed feature engineering on the dataset containing 70k+ datapoints.</li>
-                <li>Designed, trained, and evaluated multiple algorithms, utilizing performance metrics such as accuracy, confusion matrix, and F1-score to optimize model effectiveness.</li>
-                <li>Selected kernel support vector machine as the best-fit model with the highest accuracy of 80% and F1 score of 0.82.</li>
-                <li>Presented findings to a panel of faculty and industry experts, receiving recognition for its innovation and effectiveness.</li>
-            </ul>
-        </div>
 
-         <!-- 2. Hybrid CNN + Vision Transformer for CIFAR-100 Classification -->
+         <!-- 1. Hybrid CNN + Vision Transformer for CIFAR-100 Classification -->
 
          <div class="project-card">
             <div class="project-title">
@@ -1236,20 +1214,19 @@ body {
                 </a>
             </div>
             <div class="project-description">
-                Built a hybrid deep-learning architecture combining a convolutional stem with Vision Transformer (ViT)
-                blocks for fine-grained image classification on CIFAR-100
+                Designed and trained a novel hybrid architecture from scratch combining a 3-layer convolutional stem with
+                8-layer Vision Transformer, addressing ViT’s known data-efficiency challenges on small-scale datasets.
             </div>
             <ul class="project-highlights">
-                <li>Designed a 3-layer convolutional embedding module (32×32 → 8×8) to capture low-level inductive biases
-                    before feeding features into an 8-layer transformer with multi-head self-attention.</li>
-                <li>Implemented advanced training strategies including AutoAugment, Random Erasing, cosine LR scheduling,
+                <li>Achieved 66.67% validation accuracy on CIFAR-100 (100 classes, 50K training samples) – outperforming
+                    pure Vision Transformers by 15-20% and competitive with published hybrid architectures (CvT, DeiT)
+                    trained without ImageNet pretraining.</li>
+                <li>Implemented comprehensive training strategies including AutoAugment, Random Erasing, cosine LR scheduling,
                     AdamW, label smoothing, and stochastic depth for improved generalization.</li>
-                <li>Achieved 66.67% validation accuracy and 78.40% training accuracy, outperforming standard ViT baselines
-                    trained from scratch on CIFAR-100.</li>
             </ul>
         </div>
 
-        <!-- 3. Solar Panel Detection -->
+        <!-- 2. Solar Panel Detection -->
         <div class="project-card">
             <div class="project-title">
                 <a href="https://huggingface.co/spaces/Aumkeshchy2003/Solar_Panel_detection" class="project-link" target="_blank">
@@ -1268,7 +1245,7 @@ body {
             </ul>
         </div>
 
-        <!-- 4. Advanced TTS -->
+        <!-- 3. Advanced TTS -->
         <div class="project-card">
             <div class="project-title">
                 <a href="https://huggingface.co/Aumkeshchy2003" class="project-link" target="_blank">
@@ -1277,17 +1254,41 @@ body {
                 </a>
             </div>
             <div class="project-description">
-                Fine-tuned Microsoft's SpeechT5 model to improve pronunciation of Technical English Terms focusing on modifying the phonetic representation to ensure precise pronunciation of abbreviations and acronyms.
+                Fine-tuned Microsoft’s SpeechT5 transformer model for technical speech synthesis, achieving 25% improvement in Mean Opinion Score 
+                through custom phonetic preprocessing pipeline for technical terms, abbreviations, and acronyms.
             </div>
             <ul class="project-highlights">
-                <li>Achieved a 25% enhancement in speech quality over the baseline TTS model, as reflected in a significant Mean Opinion Score (MOS) improvement, with notable enhancements in handling technical terms.</li>
-                <li>Optimized the baseline model to generate a Native Italian Voice by enhancing pronunciation, prosody, and stress patterns in line with the phonological rules of the Italian language, significantly improving speech quality and naturalness compared to other existing models.</li>
-                <li>Harnessed tools like Transformers, PyTorch, and Hugging Face Datasets to implement advanced machine learning and NLP techniques, ensuring optimal model performance and reliability.</li>
-                <li>Implemented 8-bit dynamic quantization to linear layers using PyTorch’s native API, reducing memory usage by 30% while maintaining inference accuracy.</li>
+                <li>Optimized the baseline model to generate a native Italian voice by enhancing pronunciation, prosody, and
+                    stress patterns in line with the phonological rules of the Italian language, significantly improving speech
+                    quality and naturalness compared to other existing models.</li>
+                <li>Implemented 8-bit dynamic quantization to linear layers using PyTorch’s native API, reducing memory 
+                    usage by 30% while maintaining inference accuracy.</li>
             </ul>
         </div>
 
-        <!-- 5. AudeX -->
+
+         <!-- 4. CareerNavigator -->
+
+
+         <div class="project-card">
+            <div class="project-title">
+                <a href="https://huggingface.co/spaces/Aumkeshchy2003/CareerNavigator" class="project-link" target="_blank">
+                    CareerNavigator
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            <div class="project-description">
+                Developed CareerNavigator, a Machine Learning model that evaluates candidates' employability by analyzing key attributes and predicting suitability for a job role.
+            </div>
+            <ul class="project-highlights">
+                <li>Cleaned, pre-processed, and performed feature engineering on the dataset containing 70k+ datapoints.</li>
+                <li>Designed, trained, and evaluated multiple algorithms, utilizing performance metrics such as accuracy, confusion matrix, and F1-score to optimize model effectiveness.</li>
+                <li>Selected kernel support vector machine as the best-fit model with the highest accuracy of 80% and F1 score of 0.82.</li>
+                <li>Presented findings to a panel of faculty and industry experts, receiving recognition for its innovation and effectiveness.</li>
+            </ul>
+        </div>
+
+        <!-- 5. Hidden Project: AudeX -->
         <div class= "project-card hidden-project" style="display: none;">
             <div class="project-title">
                 <a href="https://aumkeshchaudhary.github.io/AudeX_web/" class="project-link" target="_blank">
