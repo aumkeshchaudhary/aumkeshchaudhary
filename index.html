@@ -1173,8 +1173,8 @@ body {
                     <li>Configured a multi-user Linux workstation with fstab-based persistent disk mounting, user environment
                         management, and centralized Anaconda deployment for shared computational workflows.</li>
                     <li>Processed and annotated video data collected daily over 4 months, labeling frames with multiple bird species for behavior and identity tagging.</li>
-                    <li>Adapted YOLO architecture for multi-species bird detection and species-specific behavior analysis.</li>
-                    <li>Utilized Idtrackerai to track ants and spiders, rendering trajectory data to visualize movement paths and group dynamics.</li>
+                    <li>Adapted and compared multiple YOLO architectures for multi-species bird detection and species-specific behavior analysis.</li>
+                    <li>Utilized Idtrackerai to track ants and spiders, rendering trajectory data to visualize movement paths and analyze spaiotemporal group dynamics.</li>
                 </ul>
             </div>
 
@@ -1208,14 +1208,14 @@ body {
 
          <div class="project-card">
             <div class="project-title">
-                <a href="https://huggingface.co/spaces/Aumkeshchy2003/ViT_For_100_Class" class="project-link" target="_blank">
+                <a href="https://huggingface.co/spaces/Aumkeshchy2003/ViT-One110" class="project-link" target="_blank">
                     Hybrid CNN + Vision Transformer for CIFAR-100 Classification
                     <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
             <div class="project-description">
-                Designed and trained a novel hybrid architecture from scratch combining a 3-layer convolutional stem with
-                8-layer Vision Transformer, addressing ViT’s known data-efficiency challenges on small-scale datasets.
+                Designed and trained a hybrid architecture from scratch combining a 3-layer convolutional stem with 8-layer
+                Vision Transformer, addressing ViT’s known data-efficiency challenges on small-scale datasets.
             </div>
             <ul class="project-highlights">
                 <li>Achieved 66.67% validation accuracy on CIFAR-100 (100 classes, 50K training samples) – outperforming
@@ -1223,29 +1223,13 @@ body {
                     trained without ImageNet pretraining.</li>
                 <li>Implemented comprehensive training strategies including AutoAugment, Random Erasing, cosine LR scheduling,
                     AdamW, label smoothing, and stochastic depth for improved generalization.</li>
+                <li>Fine-tuned the model on CIFAR-10 and expanded the classifier to 110 classes, demonstrating scalable 
+                    architecture adaptation and robust cross-dataset generalization.</li>
             </ul>
         </div>
 
-        <!-- 2. Solar Panel Detection -->
-        <div class="project-card">
-            <div class="project-title">
-                <a href="https://huggingface.co/spaces/Aumkeshchy2003/Solar_Panel_detection" class="project-link" target="_blank">
-                    Solar Panel Detection System
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-            <div class="project-description">
-                Developed an object detection model using YOLOv8n to identify and locate solar panels in low resolution satellite imagery.
-            </div>
-            <ul class="project-highlights">
-                <li>Processed and annotated a comprehensive dataset of 29,625 solar panel instances with high precision.</li>
-                <li>Achieved 94.27% precision and 91.77% recall, significantly improving solar infrastructure mapping capabilities.</li>
-                <li>Implemented sophisticated object detection techniques with mean Average Precision (mAP50) of 96.8%.</li>
-                <li>Designed and deployed an optimized real-time inference pipeline, hosting it on Hugging Face for seamless accessibility and large-scale solar panel detection.</li>
-            </ul>
-        </div>
 
-        <!-- 3. Advanced TTS -->
+        <!-- 2. Advanced TTS -->
         <div class="project-card">
             <div class="project-title">
                 <a href="https://huggingface.co/Aumkeshchy2003" class="project-link" target="_blank">
@@ -1263,6 +1247,24 @@ body {
                     quality and naturalness compared to other existing models.</li>
                 <li>Implemented 8-bit dynamic quantization to linear layers using PyTorch’s native API, reducing memory 
                     usage by 30% while maintaining inference accuracy.</li>
+            </ul>
+        </div>
+
+                <!-- 3. Solar Panel Detection -->
+        <div class="project-card">
+            <div class="project-title">
+                <a href="https://huggingface.co/spaces/Aumkeshchy2003/Solar_Panel_detection" class="project-link" target="_blank">
+                    Solar Panel Detection System
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            <div class="project-description">
+                Developed an object detection model using YOLOv8n to identify and locate solar panels in low resolution satellite imagery.
+            </div>
+            <ul class="project-highlights">
+                <li>Achieved 94.27% precision, 91.77% recall, and 96.8% mean Average Precision (mAP50, significantly improving solar infrastructure mapping capabilities.</li>
+                <li>Applied Non-Maximum Suppression with IoU threshold of 0.3 for optimal detection accuracy.</li>
+                <li></li>
             </ul>
         </div>
 
