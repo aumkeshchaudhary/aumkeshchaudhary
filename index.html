@@ -1207,26 +1207,45 @@ body {
          <!-- 1. Hybrid CNN + Vision Transformer for CIFAR-100 Classification -->
 
          <div class="project-card">
-            <div class="project-title">
-                <a href="https://huggingface.co/spaces/Aumkeshchy2003/ViT-One110" class="project-link" target="_blank">
-                    Hybrid CNN + Vision Transformer for CIFAR-100 Classification
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-            <div class="project-description">
-                Designed and trained a hybrid architecture from scratch combining a 3-layer convolutional stem with 8-layer
-                Vision Transformer, addressing ViT’s known data-efficiency challenges on small-scale datasets.
-            </div>
-            <ul class="project-highlights">
-                <li>Achieved 66.67% validation accuracy on CIFAR-100 (100 classes, 50K training samples) – outperforming
-                    pure Vision Transformers by 15-20% and competitive with published hybrid architectures (CvT, DeiT)
-                    trained without ImageNet pretraining.</li>
-                <li>Implemented comprehensive training strategies including AutoAugment, Random Erasing, cosine LR scheduling,
-                    AdamW, label smoothing, and stochastic depth for improved generalization.</li>
-                <li>Fine-tuned the model on CIFAR-10 and expanded the classifier to 110 classes, demonstrating scalable 
-                    architecture adaptation and robust cross-dataset generalization.</li>
-            </ul>
-        </div>
+    <div class="project-title">
+        <a href="https://huggingface.co/spaces/Aumkeshchy2003/ViT-One110" 
+           class="project-link" target="_blank">
+            Progressive Token Drop: Training-Efficient Vision Transformers
+            <i class="fas fa-external-link-alt"></i>
+        </a>
+        <span class="project-links">
+            | 
+            <a href="https://drive.google.com/file/d/1crkAJ54UuwbTSGaemcSipbyl8p0HcysF/view?usp=sharing"
+               class="project-link" target="_blank">
+                Report <i class="fas fa-file-pdf"></i>
+            </a>
+        </span>
+    </div>
+
+    <div class="project-description">
+        Investigated Progressive Token Drop (PTD), a training-time strategy that progressively removes low-saliency
+        tokens based on attention weights, reducing training compute while preserving model architecture and
+        inference performance.
+    </div>
+
+    <ul class="project-highlights">
+        <li>
+            Trained hybrid CNN-ViT model from scratch on CIFAR-100 and applied PTD curriculum with Mixup/CutMix,
+            achieving 1.3× (25.3% faster) training speedup with 2.53% accuracy improvement
+            (74.12% vs 71.59% baseline), demonstrating efficiency gains with superior generalization
+            for compute-constrained training.
+        </li>
+        <li>
+            PTD significantly mitigated overfitting compared to the baseline, sustaining validation accuracy
+            under strong augmentations rather than memorizing the dataset.
+        </li>
+        <li>
+            Fine-tuned the model on CIFAR-10 and expanded the classifier to 110 classes, demonstrating scalable
+            architecture adaptation and robust cross-dataset generalization.
+        </li>
+    </ul>
+</div>
+
 
 
         <!-- 2. Advanced TTS -->
