@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=220&section=header&text=Aumkesh%20Chaudhary&fontSize=80&fontAlignY=35&desc=Computer%20Science%20%26%20Data%20Analytics%20@%20IIT%20Patna&descAlignY=60&descSize=20&animation=fadeIn" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=220&section=header&text=Aumkesh%20Chaudhary&fontSize=80&fontAlignY=35&desc=Computer%20Science%20and%20Data%20Analytics%20@%20IIT%20Patna&descAlignY=60&descSize=20&animation=fadeIn" alt="Header" />
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=3572A5&center=true&vCenter=true&width=500&lines=Building+Efficient+ML+Architectures;Researching+Computational+Ecology;Fine-tuning+Vision+Transformers;Pianist+%26+Guitarist" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=3572A5&center=true&vCenter=true&width=500&lines=Building+Efficient+ML+Architectures;Researching+Computational+Ecology;Fine-tuning+Vision+Transformers;Pianist+and+Guitarist" alt="Typing SVG" />
   </a>
 
   <p>
