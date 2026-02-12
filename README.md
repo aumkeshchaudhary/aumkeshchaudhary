@@ -8,7 +8,6 @@
 
   [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aumkeshchaudhary@gmail.com)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aumkesh-chaudhary-03bba5271/)
-  
   [![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/Aumkeshchy2003)
 
 </div>
@@ -66,6 +65,10 @@ Computer Science & Data Analytics Undergraduate at **IIT Patna** (CPI: **9.12**)
 </div>
 
 <br />
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=aumkeshchaudhary&label=PROFILE+VIEWS&color=00f2ff&style=flat-square" alt="Profile Views" />
+</div>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,100:0d1117&height=100&section=footer" width="100%"/>
