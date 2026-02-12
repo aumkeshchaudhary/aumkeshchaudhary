@@ -1,203 +1,74 @@
-# Hey there 👋 I'm **Aumkesh Chaudhary**
-
 <div align="center">
-  <h3>🤖 ML Engineer | 🔬 Research Intern | 🎓 CS Undergrad @ IIT Patna</h3>
-  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aumkesh-chaudhary)
-  [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aumkeshchaudhary)
-  [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com)
-  [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aumkeshchaudhary@gmail.com)
-  [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio.com)
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=220&section=header&text=Aumkesh%20Chaudhary&fontSize=80&fontAlignY=35&desc=Computer%20Science%20%26%20Data%20Analytics%20@%20IIT%20Patna&descAlignY=60&descSize=20&animation=fadeIn" alt="Header" />
+
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=3572A5&center=true&vCenter=true&width=500&lines=Building+Efficient+ML+Architectures;Researching+Computational+Ecology;Fine-tuning+Vision+Transformers;Pianist+%26+Guitarist" alt="Typing SVG" />
+  </a>
+
+  <p>
+    <a href="mailto:aumkeshchaudhary@gmail.com">
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    </a>
+    <a href="https://www.linkedin.com/in/[YOUR-LINKEDIN-HANDLE]">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    <a href="https://huggingface.co/[YOUR-HF-HANDLE]">
+      <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace" />
+    </a>
+  </p>
 </div>
 
 ---
 
-## 🚀 About Me
+### 👨‍💻 About Me
 
-I'm a **Computer Science undergraduate** at **IIT Patna** with a passion for building efficient ML systems and conducting research at the intersection of computer vision and computational ecology. I've trained vision transformers from scratch, deployed production object detection systems, and contributed to Max Planck-funded research on animal collective behavior.
+I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI: 9.12) with a passion for building AI systems that are both intelligent and efficient. My work bridges the gap between **deep learning theory** and **scientific application**, particularly in environments with limited data or compute constraints.
 
-**What drives me:** Developing scalable ML architectures for real-world scientific applications with limited data.
-
-### 📊 Quick Stats
-- **CPI:** 9.12/10 @ IIT Patna (2023–2027)
-- **Research:** Max Planck Society-funded project on animal collective behavior
-- **Best CV Achievement:** 96.69% mAP@50 on multi-species bird detection (YOLO)
-- **ML Speed Wins:** 1.3× training speedup with Progressive Token Drop
+* [cite_start]🔭 **Research:** I previously worked as a **Research Intern** on a **Max Planck-funded project** at Ahmedabad University, analyzing animal collective behavior using computer vision (YOLO, Idtrackerai)[cite: 15, 18].
+* [cite_start]🧠 **Core Interest:** Developing efficient ML architectures (like **Hybrid Vision Transformers**) and deploying production-grade object detection systems[cite: 7, 10].
+* [cite_start]🛠️ **Current Focus:** Investigating **Progressive Token Drop (PTD)** strategies to reduce training compute while preserving model accuracy[cite: 32].
+* 🎹 **Fun Fact:** When I'm not training models, I'm composing music. [cite_start]I have **8+ years of experience** playing the Piano and Guitar.
 
 ---
 
-## 🔥 Featured Projects
-
-### 1. 🏆 **Progressive Token Drop: Training-Efficient Vision Transformers**
-<a href="https://github.com"><img src="https://img.shields.io/badge/View%20Code-GitHub-black?style=flat-square&logo=github" alt="GitHub"></a> <a href="https://huggingface.co"><img src="https://img.shields.io/badge/View%20Model-HuggingFace-yellow?style=flat-square" alt="HuggingFace"></a>
-
-**Vision Transformer optimization through intelligent token pruning**
-
-Investigated a training-time strategy that progressively removes low-saliency tokens based on attention weights. The innovation achieved remarkable results:
-
-```
-📈 1.3× (25.3%) training speedup
-✅ 2.53% accuracy improvement (74.12% vs 71.59% baseline)
-🎯 Superior generalization with Mixup/CutMix augmentation
-🛡️ Significantly mitigated overfitting compared to baseline
-```
-
-**Tech Stack:** PyTorch, Vision Transformers, CIFAR-100, Attention Mechanisms
-
----
-
-### 2. 🌍 **Multi-Species Bird Detection System** (Max Planck Research)
-<a href="https://github.com"><img src="https://img.shields.io/badge/View%20Code-GitHub-black?style=flat-square&logo=github" alt="GitHub"></a>
-
-**Production-grade object detection for computational ecology**
-
-Deployed a YOLO-based system to understand collective behavior in animal groups. Processed 5,000+ manually annotated frames with data augmentation to 10,000+ samples.
-
-```
-🎯 mAP@50: 96.69% | mAP@50:95: 81.2%
-📊 Precision: 95.2% | Recall: 92.4% | F1: 93.8%
-🔄 Multi-architecture benchmarking (YOLOv8 variants)
-📹 Real-world video data from 4-month longitudinal studies
-```
-
-**Bonus Work:** Linux workstation configuration (fstab mounting, Anaconda deployment for multi-user workflows), trajectory visualization with Idtrackerai
-
-**Tech Stack:** YOLOv8, OpenCV, Linux, Python, CVAT
-
----
-
-### 3. ☀️ **Solar Panel Detection in Satellite Imagery**
-<a href="https://github.com"><img src="https://img.shields.io/badge/View%20Code-GitHub-black?style=flat-square&logo=github" alt="GitHub"></a> <a href="https://huggingface.co"><img src="https://img.shields.io/badge/View%20Model-HuggingFace-yellow?style=flat-square" alt="HuggingFace"></a>
-
-**Low-resolution satellite imagery analysis for infrastructure mapping**
-
-Engineered an object detection pipeline to locate solar panels in challenging, low-resolution satellite imagery.
-
-```
-🎯 Precision: 94.27% | Recall: 91.77% | mAP50: 96.8%
-🛰️ Low-resolution satellite imagery optimization
-⚙️ Non-Maximum Suppression (IoU threshold: 0.3)
-```
-
-**Tech Stack:** YOLOv8n, Geospatial data, NMS optimization
-
----
-
-### 4. 🎤 **Advanced Text-to-Speech Optimization**
-<a href="https://github.com"><img src="https://img.shields.io/badge/View%20Code-GitHub-black?style=flat-square&logo=github" alt="GitHub"></a> <a href="https://huggingface.co"><img src="https://img.shields.io/badge/View%20Model-HuggingFace-yellow?style=flat-square" alt="HuggingFace"></a>
-
-**Fine-tuned speech synthesis with language-specific optimization**
-
-Enhanced Microsoft's SpeechT5 transformer for technical and multilingual speech synthesis.
-
-```
-📈 25% improvement in Mean Opinion Score (MOS)
-🇮🇹 Native Italian voice with optimized prosody
-💾 30% memory reduction via 8-bit dynamic quantization
-🔤 Custom phonetic preprocessing for technical terms
-```
-
-**Tech Stack:** SpeechT5, PyTorch quantization, Phonetic Processing, Transformers
-
----
-
-### 5. 💼 **CareerNavigator – Capstone Project**
-<a href="https://github.com"><img src="https://img.shields.io/badge/View%20Code-GitHub-black?style=flat-square&logo=github" alt="GitHub"></a> <a href="https://huggingface.co"><img src="https://img.shields.io/badge/Live%20Demo-HuggingFace%20Spaces-yellow?style=flat-square" alt="Demo"></a>
-
-**Employability prediction system analyzing 70k+ candidate records**
-
-Machine learning system to predict job suitability across diverse candidate profiles. Deployed as an interactive web application.
-
-```
-🎯 Accuracy: 80% | F1-Score: 0.82
-🔍 Analyzed 70,000+ candidate records
-📊 Benchmarked 5+ classification algorithms (SVM selected)
-🌐 Interactive interface via Hugging Face Spaces
-```
-
-**Tech Stack:** Scikit-learn, Kernel SVM, pandas, Hugging Face Spaces
-
----
-
-### 6. 🏢 **Django Educational Platform Backend**
-Project Intern @ IIT Mandi iHub & HCI Foundation (Remote)
-
-**Scalable backend infrastructure for 1,000+ users**
-
-Architected and implemented role-based educational platform supporting diverse user workflows.
-
-```
-🔐 OAuth 2.0 authentication & role-based access control (RBAC)
-📊 Interactive dashboards with activity tracking & progress visualization
-🔌 REST APIs for seamless student-instructor interactions
-⚡ Scalable Django architecture for 1,000+ concurrent users
-```
-
-**Tech Stack:** Django, REST Framework, PostgreSQL, OAuth 2.0, Redis
-
----
-
-## 💡 Core Competencies
+### 🛠️ Technical Arsenal
 
 <div align="center">
 
-| **ML & AI** | **Computer Vision** | **Backend & DevOps** |
-|:---:|:---:|:---:|
-| Deep Learning | YOLO Architectures | Django |
-| Vision Transformers | Object Detection | Flask |
-| PyTorch | Image Segmentation | Node.js |
-| TensorFlow/Keras | Video Processing | REST APIs |
-| Model Optimization | Data Augmentation | Docker |
-
-| **Languages** | **Tools & Platforms** | **Databases** |
-|:---:|:---:|:---:|
-| Python ⭐⭐⭐⭐⭐ | Git & GitHub | PostgreSQL |
-| Java | Jupyter & Colab | MongoDB |
-| C, MATLAB, R | VS Code | MySQL, SQLite |
-| JavaScript | Docker | Redis |
-| HTML/CSS | Linux (Ubuntu) | Roboflow |
+| **Languages** | **Deep Learning & AI** | **DevOps & Tools** | **Web Dev** |
+| :---: | :---: | :---: | :---: |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white) | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) | ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white) |
+| ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white) | ![YOLO](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat&logo=opencv&logoColor=black) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black) | ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) |
+| ![MATLAB](https://img.shields.io/badge/MATLAB-ED7D31?style=flat&logo=mathworks&logoColor=white) | ![HuggingFace](https://img.shields.io/badge/Transformers-FFD21E?style=flat&logo=huggingface&logoColor=black) | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | ![REST API](https://img.shields.io/badge/REST%20API-005571?style=flat&logo=fastapi&logoColor=white) |
 
 </div>
 
 ---
 
-## 🎖️ Achievements & Recognition
+### 🏆 Selected Projects
 
-- **🏆 Anubhav Graduate Fellowship** – IIT Mandi (Apr–Jun 2025)  
-  *₹5,000/month for project-based work in HCI and allied areas*
-
-- **🔬 Max Planck Society-Funded Research**  
-  *Computational ecology research on animal collective behavior*
-
-- **🎓 CPI: 9.12/10** – IIT Patna Computer Science & Data Analytics
-
----
-
-## 🎵 Beyond Code
-
-When I'm not training neural networks or analyzing bird behavior, you'll find me:
-
-- **🎹 Piano:** 8+ years | Classical & contemporary composition
-- **🎸 Guitar:** 2+ years | Indian & Western fingerstyle techniques
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **Progressive Token Drop** | Validated a training-time strategy to remove low-saliency tokens in Vision Transformers. [cite_start]Achieved a **1.3x speedup** and **2.53% accuracy boost** on CIFAR-100[cite: 30, 33]. | `PyTorch` `ViT` `CNN` |
+| **Eco-Vision (Research)** | Annotated **5,000+ frames** and trained YOLO models for multi-species bird detection with **96.69% mAP@50**. [cite_start]Part of a Max Planck-funded study on coordination[cite: 19, 21]. | `YOLO` `Idtrackerai` `Augmentation` |
+| **Solar Panel Detection** | [cite_start]Developed an object detection model for low-res satellite imagery, achieving **96.8% mAP**, improving solar infrastructure mapping[cite: 37, 40]. | `YOLOv8n` `NMS` `Satellite Imagery` |
+| **Native Italian TTS** | [cite_start]Fine-tuned **Microsoft's SpeechT5** with custom phonetic preprocessing, implementing 8-bit quantization to reduce memory by **30%**[cite: 43, 45]. | `SpeechT5` `Quantization` `NLP` |
 
 ---
 
-## 📬 Let's Connect
-
-I'm always excited to discuss ML research, computer vision applications, and efficient deep learning architectures!
+### 📊 GitHub Stats
 
 <div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=[Your-GitHub-Username]&show_icons=true&theme=radical&hide_border=true" height="160" alt="Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[Your-GitHub-Username]&layout=compact&theme=radical&hide_border=true" height="160" alt="Languages" />
+</div>
 
-**[📧 Email](mailto:aumkeshchaudhary@gmail.com)** • **[🔗 LinkedIn](https://linkedin.com/in/aumkesh-chaudhary)** • **[📹 YouTube](https://youtube.com)** • **[🌐 Portfolio](https://portfolio.com)**
-
+<div align="center">
+  <br>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=[Your-GitHub-Username]&theme=radical&hide_border=true" alt="Streak" />
 </div>
 
 ---
-
 <div align="center">
-  
-  ![Profile Views](https://komarev.com/ghpvc/?username=aumkeshchaudhary&color=blue&style=flat-square)
-  
-  <sub>⭐ If you find my work interesting, feel free to star my repositories and reach out!</sub>
-
+  <sub><i>"Innovation allows us to build the impossible."</i></sub>
 </div>
