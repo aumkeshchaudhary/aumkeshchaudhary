@@ -9,10 +9,10 @@
     <a href="mailto:aumkeshchaudhary@gmail.com">
       <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
-    <a href="https://www.linkedin.com/in/aumkeshchaudhary/">
+    <a href="https://www.linkedin.com/in/INSERT_LINKEDIN_USERNAME/">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
-    <a href="https://huggingface.co/aumkeshchaudhary">
+    <a href="https://huggingface.co/INSERT_HF_USERNAME">
       <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace" />
     </a>
   </p>
@@ -49,24 +49,20 @@ I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **Progressive Token Drop** | Validated a training-time strategy to remove low-saliency tokens in Vision Transformers. Achieved a **1.3x speedup** and **2.53% accuracy boost** on CIFAR-100. | `PyTorch` `ViT` `CNN` |
-| **Eco-Vision (Research)** | Annotated **5,000+ frames** and trained YOLO models for multi-species bird detection with **96.69% mAP@50**. Part of a Max Planck-funded study on coordination. | `YOLO` `Idtrackerai` `Augmentation` |
-| **Solar Panel Detection** | Developed an object detection model for low-res satellite imagery, achieving **96.8% mAP**, improving solar infrastructure mapping. | `YOLOv8n` `NMS` `Satellite Imagery` |
-| **Native Italian TTS** | Fine-tuned **Microsoft's SpeechT5** with custom phonetic preprocessing, implementing 8-bit quantization to reduce memory by **30%**. | `SpeechT5` `Quantization` `NLP` |
+| **Progressive Token Drop** | Validated a training-time strategy to remove low-saliency tokens in ViT. Achieved a **1.3x speedup** and **2.53% accuracy boost** on CIFAR-100. | `PyTorch` `ViT` `CNN` |
+| **Eco-Vision (Research)** | Annotated **5,000+ frames** and trained YOLO models for multi-species bird detection with **96.69% mAP@50**. Part of a Max Planck-funded study on coordination. | `YOLO` `Idtrackerai` |
+| **Solar Panel Detection** | Developed an object detection model for low-res satellite imagery, achieving **96.8% mAP**, improving solar infrastructure mapping. | `YOLOv8n` `Satellite` |
+| **Native Italian TTS** | Fine-tuned **SpeechT5** with custom phonetic preprocessing and 8-bit quantization, reducing memory by **30%**. | `SpeechT5` `NLP` |
 
 ---
 
 ### 📊 GitHub Stats
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=radical&hide_border=true" height="160" alt="Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=radical&hide_border=true" height="160" alt="Languages" />
-</div>
+![Aumkesh's Stats](https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=radical&hide_border=true)
 
-<div align="center">
-  <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&theme=radical&hide_border=true" alt="Streak" />
-</div>
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=radical&hide_border=true)
+
+![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&theme=radical&hide_border=true)
 
 ---
 <div align="center">
