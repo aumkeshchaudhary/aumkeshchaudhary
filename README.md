@@ -24,10 +24,10 @@
 
 I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI: 9.12) with a passion for building AI systems that are both intelligent and efficient. My work bridges the gap between **deep learning theory** and **scientific application**, particularly in environments with limited data or compute constraints.
 
-* [cite_start]🔭 **Research:** I previously worked as a **Research Intern** on a **Max Planck-funded project** at Ahmedabad University, analyzing animal collective behavior using computer vision (YOLO, Idtrackerai)[cite: 15, 18].
-* [cite_start]🧠 **Core Interest:** Developing efficient ML architectures (like **Hybrid Vision Transformers**) and deploying production-grade object detection systems[cite: 7, 10].
-* [cite_start]🛠️ **Current Focus:** Investigating **Progressive Token Drop (PTD)** strategies to reduce training compute while preserving model accuracy[cite: 32].
-* 🎹 **Fun Fact:** When I'm not training models, I'm composing music. [cite_start]I have **8+ years of experience** playing the Piano and Guitar.
+* 🔭 **Research:** I previously worked as a **Research Intern** on a **Max Planck-funded project** at Ahmedabad University, analyzing animal collective behavior using computer vision (YOLO, Idtrackerai).
+* 🧠 **Core Interest:** Developing efficient ML architectures (like **Hybrid Vision Transformers**) and deploying production-grade object detection systems.
+* 🛠️ **Current Focus:** Investigating **Progressive Token Drop (PTD)** strategies to reduce training compute while preserving model accuracy.
+* 🎹 **Fun Fact:** When I'm not training models, I'm composing music. I have **8+ years of experience** playing the Piano and Guitar.
 
 ---
 
@@ -49,10 +49,10 @@ I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **Progressive Token Drop** | Validated a training-time strategy to remove low-saliency tokens in Vision Transformers. [cite_start]Achieved a **1.3x speedup** and **2.53% accuracy boost** on CIFAR-100[cite: 30, 33]. | `PyTorch` `ViT` `CNN` |
-| **Eco-Vision (Research)** | Annotated **5,000+ frames** and trained YOLO models for multi-species bird detection with **96.69% mAP@50**. [cite_start]Part of a Max Planck-funded study on coordination[cite: 19, 21]. | `YOLO` `Idtrackerai` `Augmentation` |
-| **Solar Panel Detection** | [cite_start]Developed an object detection model for low-res satellite imagery, achieving **96.8% mAP**, improving solar infrastructure mapping[cite: 37, 40]. | `YOLOv8n` `NMS` `Satellite Imagery` |
-| **Native Italian TTS** | [cite_start]Fine-tuned **Microsoft's SpeechT5** with custom phonetic preprocessing, implementing 8-bit quantization to reduce memory by **30%**[cite: 43, 45]. | `SpeechT5` `Quantization` `NLP` |
+| **Progressive Token Drop** | Validated a training-time strategy to remove low-saliency tokens in Vision Transformers. Achieved a **1.3x speedup** and **2.53% accuracy boost** on CIFAR-100. | `PyTorch` `ViT` `CNN` |
+| **Eco-Vision (Research)** | Annotated **5,000+ frames** and trained YOLO models for multi-species bird detection with **96.69% mAP@50**. Part of a Max Planck-funded study on coordination. | `YOLO` `Idtrackerai` `Augmentation` |
+| **Solar Panel Detection** | Developed an object detection model for low-res satellite imagery, achieving **96.8% mAP**, improving solar infrastructure mapping. | `YOLOv8n` `NMS` `Satellite Imagery` |
+| **Native Italian TTS** | Fine-tuned **Microsoft's SpeechT5** with custom phonetic preprocessing, implementing 8-bit quantization to reduce memory by **30%**. | `SpeechT5` `Quantization` `NLP` |
 
 ---
 
