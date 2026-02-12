@@ -1,140 +1,154 @@
-# Hi there, I'm Aumkesh Chaudhary 👋
+# Aumkesh Chaudhary
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=300&section=header&text=Aumkesh%20Chaudhary&fontSize=90&fontAlignY=38&fontColor=0ff&desc=Deep%20Learning%20|%20Computer%20Vision%20|%20Scientific%20Computing&descAlignY=70&descSize=22&descColor=00d4ff&animation=fadeIn&fontColor=00ffff" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0e27,100:1a1a3f&height=300&section=header&text=Aumkesh%20Chaudhary&fontSize=90&fontAlignY=38&fontColor=00d9ff&desc=Deep%20Learning%20%7C%20Computer%20Vision%20%7C%20Scientific%20Computing&descAlignY=70&descSize=20&descColor=64ffda&animation=fadeIn" alt="Header" />
 </div>
 
+<br />
+
 <div align="center">
 
-### 🚀 Building Intelligent Systems | Researching Efficient ML | Composing Music
-
-[![Gmail](https://img.shields.io/badge/-Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:aumkeshchaudhary@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aumkeshchaudhary/)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aumkeshchaudhary)
-[![HuggingFace](https://img.shields.io/badge/-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/aumkeshchaudhary)
+**Building Efficient Machine Learning Systems | Researching Vision Transformers | Computational Ecology**
 
 </div>
 
 ---
 
-## 🎯 About Me
+## Connect
 
-I'm a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI: 9.12), passionate about bridging the gap between deep learning theory and real-world scientific applications.
+<div align="center">
 
-### 💡 What I Do
+[Gmail](mailto:aumkeshchaudhary@gmail.com) • [LinkedIn](https://www.linkedin.com/in/aumkeshchaudhary/) • [GitHub](https://github.com/aumkeshchaudhary) • [HuggingFace](https://huggingface.co/aumkeshchaudhary)
 
-- 🔬 **Research & Innovation**: Currently investigating Progressive Token Drop (PTD) strategies to optimize Vision Transformers for computational efficiency
-- 🤖 **Computer Vision**: Specializing in object detection, multi-species tracking, and satellite imagery analysis
-- ⚙️ **ML Infrastructure**: Developing production-grade deep learning pipelines with focus on efficiency and scalability
-- 🎹 **Creative Coding**: 8+ years of piano and guitar experience—music influences my approach to structured problem-solving
-
-### 🌟 Highlights
-
-- **Research Intern** @ Ahmedabad University (Max Planck-funded project) — Computational ecology and animal behavior analysis
-- **Expert** in Vision Transformers, YOLO-based detection systems, and fine-tuning LLMs
-- **Passionate** about efficient ML architectures that don't compromise on accuracy
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## About
+
+Computer Science & Data Analytics Undergraduate at IIT Patna (CPI: 9.12). Passionate about advancing machine learning research at the intersection of theoretical efficiency and practical scientific applications.
+
+Currently investigating Progressive Token Drop strategies to optimize Vision Transformers while maintaining model accuracy. Previously completed research internship at Ahmedabad University on a Max Planck-funded project analyzing animal collective behavior through computer vision.
+
+Specialized in designing and deploying production-grade deep learning systems with emphasis on computational efficiency, scalability, and real-world impact. Experienced in fine-tuning transformer models, object detection pipelines, and building end-to-end machine learning solutions.
+
+Beyond research and development, I have 8+ years of experience in piano and guitar composition. Music informs my approach to structured problem-solving and algorithm design.
+
+---
+
+## Technical Foundation
 
 ### Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-ED7D31?style=for-the-badge&logo=mathworks&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-ED7D31?style=flat&logo=mathworks&logoColor=white)
 
-### Deep Learning & ML
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+### Deep Learning & Machine Learning
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat&logo=huggingface&logoColor=black)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat&logo=opencv&logoColor=black)
 
-### Tools & Platforms
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=for-the-badge&logo=jupyter&logoColor=white)
+### Tools & Infrastructure
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=flat&logo=jupyter&logoColor=white)
 
-### Frameworks & Libraries
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+### Frameworks
+![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 
 ---
 
-## 🏆 Featured Projects
+## Featured Work
 
 <table>
 <tr>
-<td width="35%">
+<td align="center" width="33%">
 
-### 📊 Progressive Token Drop (PTD)
+### Progressive Token Drop
+
 **Vision Transformer Optimization**
 
-Validated a training-time strategy to remove low-saliency tokens in Vision Transformers, achieving significant speedups.
+Validated a training-time strategy for removing low-saliency tokens in Vision Transformers through systematic experimentation and analysis.
 
-**Results:**
-- ⚡ **1.3x training speedup**
-- 📈 **+2.53% accuracy boost** on CIFAR-100
-- 🎯 Reduced computational overhead
+**Results**
+- 1.3x training speedup
+- 2.53% accuracy improvement on CIFAR-100
+- Reduced computational requirements
 
-**Tech:** PyTorch, Vision Transformers
-
-</td>
-<td width="30%">
-
-### 🦅 Eco-Vision (Research)
-**Multi-Species Bird Detection**
-
-Comprehensive computer vision solution for tracking animal behavior in natural settings.
-
-**Achievements:**
-- 🎯 **96.69% mAP@50**
-- 📸 5,000+ frames annotated
-- 🔬 Max Planck-funded research
-- 🌍 Real-world ecological impact
-
-**Tech:** YOLO, Idtrackerai
+**Technology:** PyTorch, Vision Transformers, CIFAR-100
 
 </td>
-<td width="35%">
+<td align="center" width="33%">
 
-### 🌞 Solar Panel Detection
+### Eco-Vision
+
+**Multi-Species Detection & Tracking**
+
+Comprehensive computer vision framework for tracking and analyzing animal behavior in natural environments with high precision.
+
+**Results**
+- 96.69% mAP@50 on multi-species detection
+- 5,000+ frames annotated and processed
+- Max Planck Institute funded research
+- Production-ready tracking pipeline
+
+**Technology:** YOLO, Idtrackerai, Computer Vision
+
+</td>
+<td align="center" width="33%">
+
+### Solar Panel Detection
+
 **Satellite Imagery Analysis**
 
-Developed high-performance object detection for infrastructure mapping in low-resolution satellite data.
+Developed object detection model optimized for identifying solar installations in low-resolution satellite imagery for infrastructure mapping.
 
-**Performance:**
-- 🎯 **96.8% mAP**
-- 📡 Low-resolution satellite imagery
-- 🏗️ Infrastructure mapping
-- ♻️ Renewable energy focus
+**Results**
+- 96.8% mean Average Precision
+- Low-resolution satellite imagery processing
+- Renewable energy infrastructure mapping
+- Scalable detection pipeline
 
-**Tech:** YOLOv8n, Satellite Data
+**Technology:** YOLOv8n, Satellite Data, Detection
 
 </td>
 </tr>
+</table>
+
+<table>
 <tr>
-<td width="35%">
+<td align="center" width="50%">
 
-### 🗣️ Native Italian TTS
-**Speech Synthesis Engine**
+### Native Italian Speech Synthesis
 
-Fine-tuned speech-to-text model with custom preprocessing and optimization.
+**Fine-tuned Text-to-Speech Engine**
 
-**Features:**
-- 🎙️ Italian language specialized
-- 📉 **30% memory reduction**
-- ⚡ 8-bit quantization
-- 🔤 Custom phonetic preprocessing
+Adapted SpeechT5 for Italian language with custom phonetic preprocessing and quantization techniques.
 
-**Tech:** SpeechT5, Quantization
+**Results**
+- 30% memory reduction through 8-bit quantization
+- Custom phonetic preprocessing pipeline
+- Italian language specialization
+- Efficient inference
+
+**Technology:** SpeechT5, Quantization, NLP
 
 </td>
-<td colspan="2">
+<td align="center" width="50%">
 
-> *All projects demonstrate a commitment to efficient, scalable ML solutions with measurable real-world impact.*
+### Additional Research
+
+Multiple projects in machine learning efficiency, neural architecture optimization, and practical applications of computer vision in scientific research contexts.
+
+Focused on bridging the gap between theoretical advances and real-world deployment constraints.
+
+**Ongoing:** Progressive token optimization, efficient inference techniques
 
 </td>
 </tr>
@@ -142,44 +156,36 @@ Fine-tuned speech-to-text model with custom preprocessing and optimization.
 
 ---
 
-## 📈 GitHub Analytics
+## GitHub Activity
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&card_width=500)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0a0e27&text_color=c9d1d9&title_color=00d9ff&icon_color=64ffda)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0e27&text_color=c9d1d9&title_color=00d9ff)
 
-![Contribution Streak](https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&theme=tokyonight&hide_border=true)
+![Contribution Streak](https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&theme=tokyonight&hide_border=true&background=0a0e27&stroke=64ffda&ring=00d9ff&fire=ff006e&currStreakNum=c9d1d9)
 
 </div>
 
 ---
 
-## 💬 Let's Connect
+## Collaboration
 
-I'm always interested in discussing:
-- 🔬 **Research collaborations** in computer vision and ML efficiency
-- 🤝 **Open source contributions** to ML frameworks
-- 🎵 **Music & tech** intersections (Spotify playlists for coding sessions!)
-- 📚 **Knowledge sharing** on efficient neural architectures
+Interested in discussing research collaborations, open source contributions to machine learning frameworks, knowledge exchange on efficient neural architectures, and interdisciplinary applications of deep learning.
+
+Feel free to reach out via email or connect on LinkedIn.
 
 <div align="center">
 
-**Feel free to reach out via email or LinkedIn!** 📬
-
-[aumkeshchaudhary@gmail.com](mailto:aumkeshchaudhary@gmail.com) | [LinkedIn](https://www.linkedin.com/in/aumkeshchaudhary/)
+[aumkeshchaudhary@gmail.com](mailto:aumkeshchaudhary@gmail.com) — [LinkedIn Profile](https://www.linkedin.com/in/aumkeshchaudhary/)
 
 </div>
 
----
+<br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=120&section=footer&fontSize=90&fontColor=00ffff" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0e27,100:1a1a3f&height=100&section=footer" />
 </div>
 
-<div align="center">
-
-⭐ **If you find my work interesting, please consider starring my repositories!**
-
-</div>
+<br />
