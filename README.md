@@ -2,17 +2,17 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=220&section=header&text=Aumkesh%20Chaudhary&fontSize=80&fontAlignY=35&desc=Computer%20Science%20and%20Data%20Analytics%20@%20IIT%20Patna&descAlignY=60&descSize=20&animation=fadeIn" alt="Header" />
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=3572A5&center=true&vCenter=true&width=500&lines=Building+Efficient+ML+Architectures" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=3572A5&center=true&vCenter=true&width=500&lines=Building+Efficient+ML+Architectures;Researching+Computational+Ecology;Fine-tuning+Vision+Transformers;Pianist+and+Guitarist" alt="Typing SVG" />
   </a>
 
   <p>
     <a href="mailto:aumkeshchaudhary@gmail.com">
       <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
-    <a href="https://www.linkedin.com/in/INSERT_LINKEDIN_USERNAME/">
+    <a href="https://www.linkedin.com/in/aumkeshchaudhary/">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
-    <a href="https://huggingface.co/INSERT_HF_USERNAME">
+    <a href="https://huggingface.co/aumkeshchaudhary">
       <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace" />
     </a>
   </p>
@@ -24,10 +24,10 @@
 
 I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI: 9.12) with a passion for building AI systems that are both intelligent and efficient. My work bridges the gap between **deep learning theory** and **scientific application**, particularly in environments with limited data or compute constraints.
 
-* 🔭 **Research:** I previously worked as a **Research Intern** on a **Max Planck-funded project** at Ahmedabad University, analyzing animal collective behavior using computer vision (YOLO, Idtrackerai).
-* 🧠 **Core Interest:** Developing efficient ML architectures (like **Hybrid Vision Transformers**) and deploying production-grade object detection systems.
-* 🛠️ **Current Focus:** Investigating **Progressive Token Drop (PTD)** strategies to reduce training compute while preserving model accuracy.
-* 🎹 **Fun Fact:** When I'm not training models, I'm composing music. I have **8+ years of experience** playing the Piano and Guitar.
+* [cite_start]🔭 **Research:** I previously worked as a **Research Intern** on a **Max Planck-funded project** at Ahmedabad University, analyzing animal collective behavior using computer vision (YOLO, Idtrackerai)[cite: 15, 18].
+* [cite_start]🧠 **Core Interest:** Developing efficient ML architectures (like **Hybrid Vision Transformers**) and deploying production-grade object detection systems[cite: 7, 10].
+* [cite_start]🛠️ **Current Focus:** Investigating **Progressive Token Drop (PTD)** strategies to reduce training compute while preserving model accuracy[cite: 32].
+* 🎹 **Fun Fact:** When I'm not training models, I'm composing music. [cite_start]I have **8+ years of experience** playing the Piano and Guitar[cite: 64].
 
 ---
 
@@ -49,20 +49,19 @@ I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **Progressive Token Drop** | Validated a training-time strategy to remove low-saliency tokens in ViT. Achieved a **1.3x speedup** and **2.53% accuracy boost** on CIFAR-100. | `PyTorch` `ViT` `CNN` |
-| **Eco-Vision (Research)** | Annotated **5,000+ frames** and trained YOLO models for multi-species bird detection with **96.69% mAP@50**. Part of a Max Planck-funded study on coordination. | `YOLO` `Idtrackerai` |
-| **Solar Panel Detection** | Developed an object detection model for low-res satellite imagery, achieving **96.8% mAP**, improving solar infrastructure mapping. | `YOLOv8n` `Satellite` |
-| **Native Italian TTS** | Fine-tuned **SpeechT5** with custom phonetic preprocessing and 8-bit quantization, reducing memory by **30%**. | `SpeechT5` `NLP` |
+| **Progressive Token Drop** | Validated a training-time strategy to remove low-saliency tokens in ViT. [cite_start]Achieved a **1.3x speedup** and **2.53% accuracy boost** on CIFAR-100[cite: 30, 33]. | `PyTorch` `ViT` `CNN` |
+| **Eco-Vision (Research)** | [cite_start]Annotated **5,000+ frames** and trained YOLO models for multi-species bird detection with **96.69% mAP@50**[cite: 19, 21]. | `YOLO` `Idtrackerai` |
+| **Solar Panel Detection** | [cite_start]Developed an object detection model for low-res satellite imagery, achieving **96.8% mAP**, improving solar infrastructure mapping[cite: 37, 40]. | `YOLOv8n` `Satellite` |
+| **Native Italian TTS** | [cite_start]Fine-tuned **SpeechT5** with custom phonetic preprocessing and 8-bit quantization, reducing memory by **30%**[cite: 43, 45]. | `SpeechT5` `NLP` |
 
 ---
 
 ### 📊 GitHub Stats
 
-![Aumkesh's Stats](https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=radical&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=radical&hide_border=true)
-
-[![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&theme=radical&hide_border=true)](https://git.io/streak-stats)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=radical&hide_border=true" alt="Aumkesh Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+</p>
 
 ---
 <div align="center">
