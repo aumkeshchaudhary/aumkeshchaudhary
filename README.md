@@ -58,13 +58,13 @@ I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI
 
 ### 📊 GitHub Stats
 
-<div align="center">
-  <h3>📊 GitHub Stats</h3>
-  <img src="https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&amp;show_icons=true&amp;theme=radical&amp;hide_border=true" height="180" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&amp;layout=compact&amp;theme=radical&amp;hide_border=true" height="180" alt="Top Languages" />
-  <br />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&amp;theme=radical&amp;hide_border=true" height="180" alt="Streak Stats" />
-</div>
+### 📊 GitHub Stats
+
+![Aumkesh's Stats](https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=radical&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=radical&hide_border=true)
+
+[![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&theme=radical&hide_border=true)](https://git.io/streak-stats)
 
 ---
 <div align="center">
