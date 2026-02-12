@@ -2,7 +2,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=220&section=header&text=Aumkesh%20Chaudhary&fontSize=80&fontAlignY=35&desc=Computer%20Science%20and%20Data%20Analytics%20@%20IIT%20Patna&descAlignY=60&descSize=20&animation=fadeIn" alt="Header" />
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=3572A5&center=true&vCenter=true&width=500&lines=Building+Efficient+ML+Architectures;Researching+Computational+Ecology;Fine-tuning+Vision+Transformers;Pianist+and+Guitarist" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=3572A5&center=true&vCenter=true&width=500&lines=Building+Efficient+ML+Architectures" alt="Typing SVG" />
   </a>
 
   <p>
@@ -58,11 +58,12 @@ I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI
 
 ### 📊 GitHub Stats
 
-![Aumkesh's Stats](https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=radical&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=radical&hide_border=true)
-
-![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&theme=radical&hide_border=true)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=radical&hide_border=true" height="180" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=radical&hide_border=true" height="180" alt="Top Languages" />
+  <br />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&theme=radical&hide_border=true" height="180" alt="Streak Stats" />
+</div>
 
 ---
 <div align="center">
