@@ -38,7 +38,7 @@ I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI
 | **Languages** | **Deep Learning & AI** | **DevOps & Tools** | **Web Dev** |
 | :---: | :---: | :---: | :---: |
 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white) | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) | ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white) |
-| ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white) | ![YOLO](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat&logo=opencv&logoColor=black) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black) | ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) |
+| ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white) | ![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat&logo=opencv&logoColor=black) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black) | ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) |
 | ![MATLAB](https://img.shields.io/badge/MATLAB-ED7D31?style=flat&logo=mathworks&logoColor=white) | ![HuggingFace](https://img.shields.io/badge/Transformers-FFD21E?style=flat&logo=huggingface&logoColor=black) | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | ![REST API](https://img.shields.io/badge/REST%20API-005571?style=flat&logo=fastapi&logoColor=white) |
 
 </div>
