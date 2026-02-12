@@ -9,10 +9,10 @@
     <a href="mailto:aumkeshchaudhary@gmail.com">
       <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
-    <a href="https://www.linkedin.com/in/[YOUR-LINKEDIN-HANDLE]">
+    <a href="https://www.linkedin.com/in/aumkeshchaudhary/">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
-    <a href="https://huggingface.co/[YOUR-HF-HANDLE]">
+    <a href="https://huggingface.co/aumkeshchaudhary">
       <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace" />
     </a>
   </p>
@@ -59,13 +59,13 @@ I am a **Computer Science & Data Analytics Undergraduate** at **IIT Patna** (CPI
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=[Your-GitHub-Username]&show_icons=true&theme=radical&hide_border=true" height="160" alt="Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[Your-GitHub-Username]&layout=compact&theme=radical&hide_border=true" height="160" alt="Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=aumkeshchaudhary&show_icons=true&theme=radical&hide_border=true" height="160" alt="Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aumkeshchaudhary&layout=compact&theme=radical&hide_border=true" height="160" alt="Languages" />
 </div>
 
 <div align="center">
   <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=[Your-GitHub-Username]&theme=radical&hide_border=true" alt="Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aumkeshchaudhary&theme=radical&hide_border=true" alt="Streak" />
 </div>
 
 ---
