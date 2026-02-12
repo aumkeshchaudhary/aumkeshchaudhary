@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDAE&center=true&vCenter=true&width=500&lines=Building+Efficient+ML+Systems;Researching+Vision+Transformers;Computational+Ecology+Analysis+%26+Algorithms)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDAE&center=true&vCenter=true&width=500&lines=Building+Efficient+ML+Systems;Researching+Vision+Transformers;Computational+Ecology+Analysis+%26+Algorithms)
 
   [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aumkeshchaudhary@gmail.com)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aumkesh-chaudhary-03bba5271/)
