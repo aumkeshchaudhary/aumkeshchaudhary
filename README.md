@@ -1,5 +1,8 @@
-- 👋 Hi, I’m @aumkeshchaudhary
-- 👀 I’m interested in ML and Mathematical Modeling
-- 🌱 I’m currently learning ...Computer Science and Data Analytics
-- 📫 How to reach me: aumkeshchaudhary@gmail.com
-- 😄 Pronouns:he/him
+## Hi there 👋
+
+I'm **Aumkesh Chaudhary**.
+
+- 👀 Interested in **Machine Learning** and **Mathematical Modeling**
+- 🌱 Currently studying **Computer Science and Data Analytics**
+- 📫 Reach me at: **aumkeshchaudhary@gmail.com**
+- 😄 Pronouns: **he/him**
