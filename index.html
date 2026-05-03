@@ -1,1698 +1,419 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Aumkesh Chaudhary</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="author" content="Aumkesh Chaudhary">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Aumkesh Chaudhary | Researcher in Machine Learning and Applied AI">
     <link rel="icon" type="image/x-icon" href="https://www.iitp.ac.in/images/favicon.ico">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Cormorant Garamond', serif;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 30%, #16213e 60%, #0f0f0f 100%);
-    color: #e0e0e0;
-    overflow-x: hidden;
-    min-height: 100vh;
-}
-
-.stars {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: #fff;
-    border-radius: 50%;
-    animation: twinkle 3s infinite;
-}
-
-@keyframes twinkle {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 1; }
-}
-
-.toggle-menu {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-}
-
-.toggle-button {
-    background: rgba(138, 43, 226, 0.9);
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(138, 43, 226, 0.5);
-}
-
-.toggle-button:hover {
-    background: rgba(138, 43, 226, 1);
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
-}
-
-.toggle-button i {
-    color: white;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-}
-
-.toggle-button.active i {
-    transform: rotate(45deg);
-}
-
-.menu-items {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    background: rgba(20, 20, 20, 0.95);
-    border-radius: 15px;
-    padding: 1rem;
-    min-width: 200px;
-    border: 1px solid rgba(138, 43, 226, 0.3);
-    backdrop-filter: blur(10px);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20px);
-    transition: all 0.3s ease;
-}
-
-.menu-items.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.menu-item {
-    display: block;
-    padding: 0.8rem 1rem;
-    text-decoration: none;
-    color: #e0e0e0;
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.menu-item:last-child {
-    margin-bottom: 0;
-}
-
-.menu-item:hover {
-    background: rgba(138, 43, 226, 0.2);
-    color: #9370DB;
-    transform: translateX(5px);
-}
-
-.menu-item i {
-    font-size: 1.1rem;
-    width: 20px;
-    text-align: center;
-}
-
-.container {
-    position: relative;
-    z-index: 2;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.hero {
-    text-align: center;
-    padding: 4rem 0;
-    position: relative;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, transparent 70%);
-    animation: pulse 8s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.1); opacity: 0.8; }
-}
-
-.name {
-    font-family: 'Cinzel', serif;
-    font-size: 4rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, #8A2BE2, #9370DB, #DDA0DD, #8A2BE2);
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradient 6s ease infinite;
-    text-shadow: 0 0 50px rgba(138, 43, 226, 0.5);
-    margin-bottom: 1rem;
-    transform: perspective(1000px) rotateX(10deg);
-}
-
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-.subtitle {
-    font-size: 1.5rem;
-    color: #b19cd9;
-    margin-bottom: 2rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-shadow: 0 0 20px rgba(177, 156, 217, 0.5);
-}
-
-.typing-effect {
-    font-size: 1.2rem;
-    color: #dda0dd;
-    min-height: 2rem;
-    margin-bottom: 3rem;
-    position: relative;
-}
-
-.typing-effect::after {
-    content: '|';
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
-}
-
-.section {
-    margin: 4rem 0;
-    padding: 2rem;
-    background: rgba(20, 20, 20, 0.8);
-    border-radius: 20px;
-    border: 1px solid rgba(138, 43, 226, 0.3);
-    backdrop-filter: blur(10px);
-    transform: perspective(1000px) rotateY(2deg);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.section::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #8A2BE2, #9370DB, #DDA0DD, #8A2BE2);
-    border-radius: 20px;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.section:hover::before {
-    opacity: 0.5;
-}
-
-.section:hover {
-    transform: perspective(1000px) rotateY(0deg) scale(1.02);
-    box-shadow: 0 20px 40px rgba(138, 43, 226, 0.3);
-}
-
-.section-title {
-    font-family: 'Cinzel', serif;
-    font-size: 2.5rem;
-    color: #9370DB;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    text-shadow: 0 0 30px rgba(147, 112, 219, 0.5);
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.about-card {
-    background: rgba(30, 30, 30, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    border: 1px solid rgba(138, 43, 226, 0.2);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.about-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.1), transparent);
-    transition: left 0.5s ease;
-}
-
-.about-card:hover::before {
-    left: 100%;
-}
-
-.about-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(138, 43, 226, 0.2);
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.skill-item {
-    background: rgba(30, 30, 30, 0.9);
-    padding: 1.5rem;
-    border-radius: 15px;
-    text-align: center;
-    border: 1px solid rgba(138, 43, 226, 0.2);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.skill-item::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: radial-gradient(circle, rgba(138, 43, 226, 0.3) 0%, transparent 70%);
-    transition: all 0.3s ease;
-    transform: translate(-50%, -50%);
-}
-
-.skill-item:hover::before {
-    width: 200%;
-    height: 200%;
-}
-
-.skill-item:hover {
-    transform: translateY(-10px) scale(1.1);
-    box-shadow: 0 15px 30px rgba(138, 43, 226, 0.3);
-}
-
-.skill-icon {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #9370DB;
-}
-
-.education-info {
-    text-align: center;
-    background: rgba(30, 30, 30, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    border: 1px solid rgba(138, 43, 226, 0.2);
-    margin-top: 2rem;
-}
-
-.cpi-badge {
-    display: inline-block;
-    background: linear-gradient(45deg, #8A2BE2, #9370DB);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    font-weight: 600;
-    margin-top: 1rem;
-}
-
-.experience-item {
-    background: rgba(30, 30, 30, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    border: 1px solid rgba(138, 43, 226, 0.2);
-    margin-bottom: 2rem;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.experience-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.1), transparent);
-    transition: left 0.5s ease;
-}
-
-.experience-item:hover::before {
-    left: 100%;
-}
-
-.experience-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.2);
-}
-
-.experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-}
-
-.experience-title {
-    color: #9370DB;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.experience-company {
-    color: #b19cd9;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
-
-.experience-date {
-    color: #dda0dd;
-    font-size: 0.9rem;
-    background: rgba(138, 43, 226, 0.2);
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-}
-
-.experience-description {
-    color: #e0e0e0;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.experience-points {
-    list-style: none;
-    padding: 0;
-}
-
-.experience-points li {
-    color: #e0e0e0;
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-.experience-points li::before {
-    content: '▸';
-    color: #9370DB;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-}
-
-.project-link {
-    color: inherit;
-    text-decoration: none;
-}
-
-.project-link:hover {
-    color: inherit;
-    text-decoration: underline;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.project-card {
-    background: rgba(30, 30, 30, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    border: 1px solid rgba(138, 43, 226, 0.2);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.1), transparent);
-    transition: left 0.5s ease;
-}
-
-.project-card:hover::before {
-    left: 100%;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(138, 43, 226, 0.3);
-}
-
-.project-title {
-    color: #9370DB;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.project-description {
-    color: #e0e0e0;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.project-highlights {
-    list-style: none;
-    padding: 0;
-}
-
-.project-highlights li {
-    color: #e0e0e0;
-    line-height: 1.6;
-    margin-bottom: 0.6rem;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-.project-highlights li::before {
-    content: '✦';
-    color: #9370DB;
-    position: absolute;
-    left: 0;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.contact-link {
-    display: block;
-    padding: 1.5rem;
-    background: rgba(30, 30, 30, 0.9);
-    border-radius: 15px;
-    text-decoration: none;
-    color: #e0e0e0;
-    border: 1px solid rgba(138, 43, 226, 0.2);
-    transition: all 0.3s ease;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.contact-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(138, 43, 226, 0.1), rgba(147, 112, 219, 0.1));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.contact-link:hover::before {
-    opacity: 1;
-}
-
-.contact-link:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
-}
-
-.quote {
-    text-align: center;
-    font-size: 1.3rem;
-    font-style: italic;
-    color: #b19cd9;
-    margin: 3rem 0;
-    padding: 2rem;
-    background: rgba(20, 20, 20, 0.6);
-    border-radius: 15px;
-    border: 1px solid rgba(138, 43, 226, 0.2);
-    position: relative;
-}
-
-.quote::before {
-    content: '"';
-    font-size: 4rem;
-    color: #8A2BE2;
-    position: absolute;
-    top: -1rem;
-    left: 1rem;
-    opacity: 0.3;
-}
-
-.quote::after {
-    content: '"';
-    font-size: 4rem;
-    color: #8A2BE2;
-    position: absolute;
-    bottom: -3rem;
-    right: 1rem;
-    opacity: 0.3;
-}
-
-.floating-element {
-    position: fixed;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.floating-orb {
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(138, 43, 226, 0.3) 0%, transparent 70%);
-    border-radius: 50%;
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-}
-
-.particle {
-    position: fixed;
-    width: 3px;
-    height: 3px;
-    background: #8A2BE2;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.extracurricular-card {
-    background: rgba(30, 30, 30, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    border: 1px solid rgba(138, 43, 226, 0.2);
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.extracurricular-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.1), transparent);
-    transition: left 0.5s ease;
-}
-
-.extracurricular-card:hover::before {
-    left: 100%;
-}
-
-.extracurricular-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(138, 43, 226, 0.2);
-}
-
-/* Header styles */
-.main-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background: rgba(20,20,20,0.95);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(138,43,226,0.3);
-    box-shadow: 0 2px 24px rgba(138,43,226,0.08);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 0;
-    transition: background 0.3s;
-}
-
-.nav-bar {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-link {
-    font-family: 'Cinzel', serif;
-    color: #b19cd9;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 0.4rem 1rem;
-    border-radius: 12px;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    position: relative;
-}
-
-.nav-link:hover, .nav-link:focus {
-    background: linear-gradient(90deg, #8A2BE2 0%, #9370DB 100%);
-    color: #fff;
-    box-shadow: 0 2px 12px rgba(138,43,226,0.15);
-    outline: none;
-}
-
-/* Dropdown styles for CV/Transcript */
-.menu-bar {
-    position: relative;
-    margin-left: 1rem;
-}
-
-.menu-bar-btn {
-    background: linear-gradient(45deg, #8A2BE2, #9370DB);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.2rem;
-    box-shadow: 0 2px 12px rgba(138,43,226,0.15);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.menu-bar-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 20px rgba(138,43,226,0.3);
-    background: linear-gradient(45deg, #9370DB, #8A2BE2);
-}
-
-.menu-bar-btn:active {
-    transform: scale(0.95);
-}
-
-.menu-bar-btn i {
-    transition: opacity 0.3s ease;
-}
-
-.menu-bar-btn.active {
-    background: linear-gradient(45deg, #9370DB, #8A2BE2);
-    box-shadow: inset 0 0 15px rgba(0,0,0,0.2);
-}
-
-.menu-bar-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 45px;
-    background: rgba(30,30,30,0.98);
-    border-radius: 12px;
-    min-width: 160px;
-    box-shadow: 0 4px 24px rgba(138,43,226,0.12);
-    border: 1px solid rgba(138,43,226,0.2);
-    z-index: 999;
-    padding: 0.5rem 0;
-}
-
-.menu-bar-dropdown.show {
-    display: block;
-}
-
-.menu-bar-dropdown a {
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    color: #b19cd9;
-    text-decoration: none;
-    padding: 0.7rem 1.2rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    font-family: 'Cinzel', serif;
-    position: relative;
-    overflow: hidden;
-}
-
-.menu-bar-dropdown a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.1), transparent);
-    transition: left 0.5s ease;
-}
-
-.menu-bar-dropdown a:hover {
-    background: linear-gradient(90deg, #8A2BE2, #9370DB);
-    color: #fff;
-    transform: translateX(5px);
-    box-shadow: 0 2px 10px rgba(138, 43, 226, 0.3);
-}
-
-.menu-bar-dropdown a:hover::before {
-    left: 100%;
-}
-
-/* ENHANCED MOBILE RESPONSIVE STYLES */
-
-/* Large tablets and small laptops */
-@media (max-width: 1024px) {
-    .container {
-        padding: 1.5rem;
-    }
-    
-    .hero {
-        padding: 3rem 0;
-    }
-    
-    .name {
-        font-size: 3.5rem;
-    }
-    
-    .section {
-        padding: 1.8rem;
-        margin: 3rem 0;
-    }
-    
-    .about-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.8rem;
-    }
-    
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-        gap: 1.3rem;
-    }
-    
-    .project-grid {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 1.8rem;
-    }
-    
-    .nav-bar {
-        gap: 1.5rem;
-    }
-    
-    .nav-link {
-        font-size: 1rem;
-        padding: 0.35rem 0.8rem;
-    }
-}
-
-/* Tablets */
-@media (max-width: 768px) {
-    .container {
-        padding: 1rem;
-    }
-    
-    .toggle-menu {
-        top: 15px;
-        left: 15px;
-    }
-    
-    .toggle-button {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .toggle-button i {
-        font-size: 1rem;
-    }
-    
-    .menu-items {
-        min-width: 180px;
-        top: 60px;
-        padding: 0.8rem;
-    }
-    
-    .menu-item {
-        padding: 0.7rem 0.8rem;
-        font-size: 0.95rem;
-    }
-    
-    .hero {
-        padding: 2rem 0;
-    }
-    
-    .name {
-        font-size: 2.5rem;
-        transform: none;
-        line-height: 1.2;
-        margin-bottom: 1.2rem;
-    }
-    
-    .subtitle {
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        margin-bottom: 1.5rem;
-    }
-    
-    .typing-effect {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-    }
-    
-    .section {
-        margin: 2rem 0;
-        padding: 1.5rem;
-        transform: none;
-        border-radius: 15px;
-    }
-    
-    .section:hover {
-        transform: none;
-        box-shadow: 0 10px 25px rgba(138, 43, 226, 0.2);
-    }
-    
-    .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-    
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .about-card {
-        padding: 1.5rem;
-    }
-    
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-        gap: 1rem;
-    }
-    
-    .skill-item {
-        padding: 1rem;
-        min-height: 80px;
-    }
-    
-    .skill-item:hover {
-        transform: translateY(-5px) scale(1.05);
-    }
-    
-    .skill-icon {
-        font-size: 1.5rem;
-    }
-    
-    .education-info {
-        padding: 1.5rem;
-    }
-    
-    .experience-item {
-        padding: 1.5rem;
-    }
-    
-    .experience-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-    
-    .experience-title {
-        font-size: 1.2rem;
-    }
-    
-    .experience-company {
-        font-size: 1rem;
-    }
-    
-    .experience-date {
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
-        align-self: flex-start;
-    }
-    
-    .project-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .project-card {
-        padding: 1.5rem;
-    }
-    
-    .project-title {
-        font-size: 1.2rem;
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .contact-link {
-        padding: 1rem;
-        min-height: 60px;
-    }
-    
-    .quote {
-        font-size: 1.1rem;
-        padding: 1.5rem;
-        margin: 2rem 0;
-    }
-    
-    .quote::before,
-    .quote::after {
-        font-size: 3rem;
-    }
-    
-    .quote::before {
-        top: -0.5rem;
-        left: 0.5rem;
-    }
-    
-    .quote::after {
-        bottom: -2rem;
-        right: 0.5rem;
-    }
-    
-    .extracurricular-card {
-        padding: 1.5rem;
-    }
-    
-    .cpi-badge {
-        font-size: 0.9rem;
-        padding: 0.4rem 0.8rem;
-    }
-}
-
-/* Extra small phones in landscape */
-@media (max-height: 480px) and (orientation: landscape) {
-    .main-header {
-        padding: 0.5rem 0;
-    }
-
-    .menu-bar-dropdown {
-        max-height: 80vh;
-        overflow-y: auto;
-        scrollbar-width: thin;
-    }
-
-    .hero {
-        padding: 1rem 0;
-    }
-
-    .name {
-        font-size: 2rem;
-    }
-
-    .section {
-        margin: 1rem 0;
-        padding: 1rem;
-    }
-}
-
-/* Touch device optimizations */
-@media (hover: none) {
-    .nav-link:hover,
-    .menu-item:hover,
-    .project-card:hover,
-    .skill-item:hover,
-    .contact-link:hover {
-        transform: none;
-    }
-
-    .section:hover {
-        transform: none;
-        box-shadow: none;
-    }
-
-    .menu-bar-btn:active {
-        transform: scale(0.95);
-    }
-}
-
-
-
-    /* High contrast mode */
-   @media (prefers-contrast: high) {
-    body {
-        background: #000000;
-    }
-
-    .section,
-    .about-card,
-    .skill-item,
-    .project-card,
-    .contact-link {
-        border: 2px solid #ffffff;
-    }
-}
+        body.bg_colour { background-color: #ffffff; color: #333; font-family: 'Arial', sans-serif; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        heading { font-size: 24px; font-weight: bold; color: #222; }
+        .collapsible { cursor: pointer; width: 100%; text-align: left; padding: 10px 0; border-bottom: 1px solid #ddd !important; margin-bottom: 15px; background: transparent; border-top: none; border-left: none; border-right: none; }
+        papertitle { font-weight: bold; }
+        .soft { border-top: 1px solid #eee; }
+        .side-image { border-radius: 8px; max-width: 100%; height: auto; }
+        ul.experience-points, ul.project-highlights { padding-left: 20px; }
+        ul.experience-points li, ul.project-highlights li { margin-bottom: 8px; }
+        
+        /* New styling for dynamic project previews */
+        .project-preview {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+        .project-preview:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+        }
+
+        .about-narrative {
+            background: rgba(30, 30, 30, 0.02);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #444;
+        }
+        .about-narrative p {
+            margin-bottom: 1.2rem;
+        }
+        .about-narrative p:last-child {
+            margin-bottom: 0;
+        }
     </style>
 </head>
-<body>
-    <!-- Header (edited) -->
-    <header class="main-header">
-        <nav class="nav-bar">
-            <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
-            <a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a>
-            <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
-            <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
-            <a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a>
-            <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
-            <!-- CV/Transcript Dropdown -->
-            <div class="menu-bar">
-                <button class="menu-bar-btn" id="menuBarBtn">
-                    <i class="fas fa-user-graduate"></i>
-                </button>
-                <div class="menu-bar-dropdown" id="menuBarDropdown">
-                    <a href="https://drive.google.com/file/d/1_K2URU-Gv2AZjieGBovi3s_MQKDEU1BC/view?usp=sharing" target="_blank">
-                        <i class="fas fa-file-pdf"></i> CV
-                    </a>
-                    <a href="https://drive.google.com/file/d/1NOlcB86cwvNn2CKsEWEdGicRtpYOJ5-u/view?usp=sharing" target="_blank">
-                        <i class="fas fa-certificate"></i> Transcript
-                    </a>
+<body class="bg_colour">
+    <table border=0 class="bg_colour" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr style="padding:0px">
+            <td style="padding:0px">
+                
+                <!-- Name tab -->
+                <table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    <tr style="padding:0px">
+                        <td style="padding:2.5%;width:20%;max-width:20%">
+                            <!-- Profile Image Placeholder -->
+                            <img style="width:150px; border-radius: 20%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" alt="profile photo" src="https://placehold.co/150x150/f3f4f6/6b7280?text=Profile+Pic">
+                        </td>
+                        <td style="padding:2.5%;width:60%;vertical-align:middle">
+                            <p style="text-align:center">
+                                <h1 style="text-align:center"><name>Aumkesh Chaudhary</name></h1>
+                                <p style="text-align:center; color:gray; font-size: 16px;">Researcher in Machine Learning and Applied AI</p>
+                            </p>
+                            <p style="text-align:center">
+                                &nbsp;|&nbsp;
+                                <a href="#education" data-toggle="collapse" data-target="#content-education">Education</a>
+                                &nbsp;|&nbsp;
+                                <a href="#experience" data-toggle="collapse" data-target="#content-experience">Experience</a>
+                                &nbsp;|&nbsp;
+                                <a href="#projects" data-toggle="collapse" data-target="#content-projects">Projects</a>
+                                &nbsp;|&nbsp;
+                                <a href="#skills" data-toggle="collapse" data-target="#content-skills">Skills</a>
+                                &nbsp;|&nbsp;
+                                <a href="mailto:aumkeshchaudhary@gmail.com">Contact</a>
+                                &nbsp;|&nbsp;
+                            </p>
+                        </td>
+                        <td style="padding:2.5%;width:10%;max-width:10%"></td>
+                    </tr>
+                </tbody></table>
+
+                <!-- About section, quick links -->
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    <tr style="padding:0px">
+                        <td style="padding:2.5%;width:100%;vertical-align:middle">
+                            
+                            <div class="about-narrative">
+                                <p>Hello! I am a computer vision researcher currently working as a research intern at the <a href="https://cistup.iisc.ac.in/" target="_blank">VISTA Lab, Indian Institute of Science (IISc)</a>, under Dr. Punit Rathore. I hold a Bachelor of Science (Honours) in Computer Science and Data Analytics from the <a href="https://www.iitp.ac.in/" target="_blank">Indian Institute of Technology (IIT), Patna</a>.</p>
+                                
+                                <p>I have a deep interest in the intersection of computer vision, deep learning, and multimodal systems. I am particularly driven by the challenge of improving Out-of-Distribution (OOD) generalization in machine learning models to ensure they perform reliably in unseen, real-world environments.</p>
+                                
+                                <p>My current research trajectory has been shaped by diverse projects, ranging from developing city-scale vehicle re-identification (ReID) systems to architecting <strong>NeuralFlora</strong>—a multimodal system that combines vision models like EfficientNetV2 and ViT with Large Language Models (LLMs) to provide actionable plant disease remediation advice. Previously, I explored the fascinating domain of computational ecology during my internship at Ahmedabad University (funded by the Max Planck Society), where I focused on frame extraction and behavior analysis from longitudinal video data of animal groups. Looking ahead, I plan to pursue a PhD in the United States, specializing in non-field-based computational ecology.</p>
+                                
+                                <p>Please feel free to check out my <a href="https://drive.google.com/file/d/1_K2URU-Gv2AZjieGBovi3s_MQKDEU1BC/view?usp=sharing" target="_blank">CV</a> and drop me an email at <a href="mailto:aumkeshchaudhary@gmail.com">aumkeshchaudhary@gmail.com</a> anytime to chat about research or potential collaborations!</p>
+                            </div>
+                            
+                            <br>
+                            <p style="text-align:center">
+                                &nbsp;~&nbsp;
+                                <a href="mailto:aumkeshchaudhary@gmail.com" target="_blank">Email</a> &nbsp;|&nbsp;
+                                <a href="https://drive.google.com/file/d/1_K2URU-Gv2AZjieGBovi3s_MQKDEU1BC/view?usp=sharing" target="_blank">CV</a> &nbsp;|&nbsp;
+                                <a href="https://drive.google.com/file/d/1NOlcB86cwvNn2CKsEWEdGicRtpYOJ5-u/view?usp=sharing" target="_blank">Transcript</a> &nbsp;|&nbsp;
+                                <a href="https://www.linkedin.com/in/aumkesh-chaudhary-03bba5271/" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+                                <a href="https://github.com/aumkeshchaudhary" target="_blank">GitHub</a> &nbsp;|&nbsp;
+                                <a href="https://www.youtube.com/channel/UCxTnnRfzgNRCEWhBK2a79sg" target="_blank">YouTube</a>
+                                &nbsp;~&nbsp;
+                            </p>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <hr class="soft">
+
+                <!-- Education -->
+                <button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-education" id="education"><heading>Education</heading></button>
+                <div id="content-education" class="collapse in">
+                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://upload.wikimedia.org/wikipedia/en/5/52/Indian_Institute_of_Technology_Patna_Logo.png' width="100" class="side-image" alt="IIT Patna Logo">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle><big>Indian Institute of Technology, Patna</big></papertitle>
+                            <br>
+                            <papertitle style="color:gray"><big>Bachelor of Science (Honours) in </big></papertitle><papertitle><big>Computer Science and Data Analytics</big></papertitle>
+                            <br>
+                            CPI: 9.12
+                            <br><br>
+                        </td>
+                    </tr>
+                </tbody></table>
                 </div>
-            </div>
-        </nav>
-    </header>
+                <hr class="soft">
 
-    <div class="stars"></div>
+                <!-- Experience -->
+                <button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-experience" id="experience"><heading>Work Experience</heading></button>
+                <div id="content-experience" class="collapse in">
+                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top: 10px;"><tbody>
+                    
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://upload.wikimedia.org/wikipedia/en/e/e4/Indian_Institute_of_Science_Bangalore_Logo.png' style="width: 90px;" class="side-image" alt="IISc Logo">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:middle">
+                            <papertitle style="color:gray"><big>Research Intern</big> </papertitle> <papertitle><big> | Indian Institute of Science (IISc) (On-site)</big></papertitle>
+                            <br>
+                            March 2026 – Present
+                            <br><br>
+                            <p>
+                                <strong>VISTA Lab, CiSTUP</strong><br>
+                                <strong>Supervisor:</strong> Dr. Punit Rathore
+                            </p>
+                            <ul class="experience-points">
+                                <li>Building vehicle re-identification (ReID) models to track vehicles consistently across multiple uncalibrated CCTV cameras in dense urban traffic.</li>
+                                <li>Resolving cross-camera identity drops and heavy occlusion issues by diagnosing failure modes in the lab’s existing traffic analytics platform.</li>
+                                <li>Deploying architectural patches to the detection and tracking pipelines to stabilize overall tracking performance in real-world conditions.</li>
+                            </ul>
+                        </td>
+                    </tr>
 
-    <div class="container">
-        <div class="hero">
-            <h1 class="name">Aumkesh Chaudhary</h1>
-            <p class="subtitle">Researcher in Machine Learning and Applied AI</p>
-            <div class="typing-effect" id="typing-text"></div>
-        </div>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://upload.wikimedia.org/wikipedia/en/5/5e/Ahmedabad_University_Logo.png' style="width: 120px;" class="side-image" alt="Ahmedabad University Logo">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:middle">
+                            <papertitle style="color:gray"><big>Research Intern</big> </papertitle> <papertitle><big> | Ahmedabad University (On-site)</big></papertitle>
+                            <br>
+                            May 2025 – June 2025
+                            <br><br>
+                            <p>
+                                <strong>Project:</strong> Understanding Decision Making and Coordination in Animal Groups<br>
+                                <strong>Supervisor:</strong> Dr. Jitesh Jhawar — Funded by Max Planck Society, Germany<br>
+                                <strong>Reports:</strong> 
+                                <a href="https://drive.google.com/file/d/1BAV-LsC4xHId8JBZ_cFqMg8L_z3SMCA6/view?usp=sharing" target="_blank">[Technical Report I]</a> | 
+                                <a href="https://drive.google.com/file/d/1Bow8RxgUqm9VcCOYfNAS4KCjMZLxMlVY/view?usp=sharing" target="_blank">[Technical Report II]</a>
+                            </p>
+                            <ul class="experience-points">
+                                <li>Studied collective behavior in animal groups via simulations and mathematical modeling.</li>
+                                <li>Configured a multi-user Linux workstation with fstab-based persistent disk mounting, user environment management, and centralized Anaconda deployment for shared computational workflows.</li>
+                                <li>Processed and annotated video data collected daily over 4 months, labeling frames with multiple bird species for behavior and identity tagging.</li>
+                                <li>Adapted and compared multiple YOLO architectures for multi-species bird detection and species-specific behavior analysis.</li>
+                                <li>Utilized Idtracker.ai to track ants and spiders, rendering trajectory data to visualize movement paths and analyze spatiotemporal group dynamics.</li>
+                            </ul>
+                        </td>
+                    </tr>
 
-        <div class="section" id="about">
-            <h2 class="section-title">∞ About Me</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3 style="color: #9370DB; margin-bottom: 1rem;"> Academic Journey</h3>
-                    <p>BS in Computer Science and Data Analytics at the Indian Institute of Technology, Patna. Investigating complex systems through a lens of both structure and curiosity.</p>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://upload.wikimedia.org/wikipedia/en/c/cf/Indian_Institute_of_Technology_Mandi_Logo.png' style="width: 110px;" class="side-image" alt="IIT Mandi Logo">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:middle">
+                            <papertitle style="color:gray"><big>Project Intern</big> </papertitle> <papertitle><big> | IIT Mandi iHub and HCi Foundation (Remote)</big></papertitle>
+                            <br>
+                            Apr 2025 – July 2025
+                            <br><br>
+                            <ul class="experience-points">
+                                <li>Developed backend infrastructure for an educational platform using Django, including role-based access control, REST APIs, and OAuth 2.0 authentication, supporting 1,000+ users across student and instructor workflows.</li>
+                                <li>Designed and implemented interactive dashboards for students and instructors, enabling activity tracking, course progress visualization, role-based permissions, and secure content access with separate workflows for each user type.</li>
+                                <li>Collaborated with cross-functional teams to architect scalable backend solutions and enforce security best practices across the platform.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody></table>
                 </div>
-                <div class="about-card">
-                    <h3 style="color: #9370DB; margin-bottom: 1rem;"> Research Passion</h3>
-                    <p>Exploring the depths of Machine Learning, Mathematical Modeling, and Scientific Simulations. Bridging the gap between theoretical knowledge and real-world applications.</p>
+                <hr class="soft">
+
+                <!-- Projects -->
+                <button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-projects" id="projects"><heading>Projects</heading></button>
+                <div id="content-projects" class="collapse in">
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://placehold.co/180x120/f3f4f6/6b7280?text=NeuralFlora' class="project-preview" alt="NeuralFlora Preview">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big>NeuralFlora: A Multimodal System for Plant Disease Diagnosis</big></papertitle>
+                            <br>
+                            <p><em>Ongoing</em> &nbsp;|&nbsp; <em><a href="#" target="_blank">[Report]</a></em></p>
+                            <p><strong>Supervisor:</strong> Dr. Kuldip Singh Patel, Asst. Prof., Dept. of Mathematics, IIT Patna</p>
+                            <p>Developed a comprehensive multimodal system that extends beyond standard classification by integrating computer vision with Large Language Models (LLMs) to provide actionable remediation advice.</p>
+                            <ul class="project-highlights">
+                                <li>Spearheaded the curation of a diverse dataset of over 63,000 images by merging laboratory-controlled PlantVillage data with real-world, PlantDoc images to enhance model generalization.</li>
+                                <li>Designing and evaluating EfficientNetV2 and Vision Transformer (ViT) architectures, implementing targeted augmentation (MixUp, CutMix) and mixed precision (AMP) to prevent overfitting to background artifacts.</li>
+                                <li>Conducting rigorous Out-of-Distribution (OOD) testing of the EfficientNetV2 model on the completely unseen PlantSeg dataset across 17 matching disease classes, establishing a current baseline OOD accuracy of 64.87% and a weighted F1-score of 0.6721.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://placehold.co/180x120/f3f4f6/6b7280?text=ViT+Project' class="project-preview" alt="PTD ViT Preview">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big>Progressive Token Drop: Training-Efficient Vision Transformers</big></papertitle>
+                            <br>
+                            <p>
+                                <em><a href="https://huggingface.co/spaces/Aumkeshchy2003/ViT-One110" target="_blank">[Link]</a></em>&nbsp;
+                                <em><a href="https://drive.google.com/file/d/1crkAJ54UuwbTSGaemcSipbyl8p0HcysF/view?usp=sharing" target="_blank">[Report]</a></em>
+                            </p>
+                            <p>Investigated Progressive Token Drop (PTD), a training-time strategy that progressively removes low-saliency tokens based on attention weights, reducing training compute while preserving model architecture and inference performance.</p>
+                            <ul class="project-highlights">
+                                <li>Trained hybrid CNN-ViT model from scratch on CIFAR-100 and applied PTD curriculum with Mixup/CutMix, achieving 1.3× (25.3% faster) training speedup with 2.53% accuracy improvement (74.12% vs 71.59% baseline), demonstrating efficiency gains with superior generalization for compute-constrained training.</li>
+                                <li>PTD significantly mitigated overfitting compared to the baseline, sustaining validation accuracy under strong augmentations rather than memorizing the dataset.</li>
+                                <li>Fine-tuned the model on CIFAR-10 and expanded the classifier to 110 classes, demonstrating scalable architecture adaptation and robust cross-dataset generalization.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://placehold.co/180x120/f3f4f6/6b7280?text=Speech+AI' class="project-preview" alt="TTS Preview">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big>Advanced Text to Speech Optimization</big></papertitle>
+                            <br>
+                            <p><em><a href="https://huggingface.co/Aumkeshchy2003" target="_blank">[Link]</a></em></p>
+                            <ul class="project-highlights">
+                                <li>Fine-tuned Microsoft’s SpeechT5 transformer model for technical speech synthesis, achieving 25% improvement in Mean Opinion Score through custom phonetic preprocessing pipeline for technical terms, abbreviations, and acronyms.</li>
+                                <li>Optimized the baseline model to generate a native Italian voice by enhancing pronunciation, prosody, and stress patterns in line with the phonological rules of the Italian language, significantly improving speech quality and naturalness compared to other existing models.</li>
+                                <li>Implemented 8-bit dynamic quantization to linear layers using PyTorch’s native API, reducing memory usage by 30% while maintaining inference accuracy.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://placehold.co/180x120/f3f4f6/6b7280?text=Solar+Panel' class="project-preview" alt="Solar Panel Detection Preview">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big>Solar Panel Detection System</big></papertitle>
+                            <br>
+                            <p><em><a href="https://huggingface.co/spaces/Aumkeshchy2003/Solar_Panel_detection" target="_blank">[Link]</a></em></p>
+                            <ul class="project-highlights">
+                                <li>Developed an object detection model using YOLOv8n to identify and locate solar panels in low resolution satellite imagery.</li>
+                                <li>Achieved 94.27% precision, 91.77% recall, and 96.8% mean Average Precision (mAP50), significantly improving solar infrastructure mapping capabilities.</li>
+                                <li>Applied Non-Maximum Suppression with IoU threshold of 0.3 for optimal detection accuracy.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://placehold.co/180x120/f3f4f6/6b7280?text=CareerNav' class="project-preview" alt="CareerNavigator Preview">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big>CareerNavigator</big></papertitle>
+                            <br>
+                            <p><em><a href="https://huggingface.co/spaces/Aumkeshchy2003/CareerNavigator" target="_blank">[Link]</a></em></p>
+                            <p>Developed CareerNavigator, a Machine Learning model that evaluates candidates' employability by analyzing key attributes and predicting suitability for a job role.</p>
+                            <ul class="project-highlights">
+                                <li>Cleaned, pre-processed, and performed feature engineering on the dataset containing 70k+ datapoints.</li>
+                                <li>Designed, trained, and evaluated multiple algorithms, utilizing performance metrics such as accuracy, confusion matrix, and F1-score to optimize model effectiveness.</li>
+                                <li>Selected kernel support vector machine as the best-fit model with the highest accuracy of 80% and F1 score of 0.82.</li>
+                                <li>Presented findings to a panel of faculty and industry experts, receiving recognition for its innovation and effectiveness.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://placehold.co/180x120/f3f4f6/6b7280?text=AudeX+App' class="project-preview" alt="AudeX Preview">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big>AudeX: Vision-to-Speech Model</big></papertitle>
+                            <br>
+                            <p><em><a href="https://aumkeshchaudhary.github.io/AudeX_web/" target="_blank">[Link]</a></em></p>
+                            <p>Developed a dynamic web application combining Optical Character Recognition (OCR) and Text-to-Speech (TTS) technologies to improve accessibility.</p>
+                            <ul class="project-highlights">
+                                <li>Integrated Tesseract for multi language OCR and Web Speech API for TTS, enabling accurate text extraction from images and high-quality text-to-speech conversion.</li>
+                                <li>Designed a responsive interface with intuitive navigation, ensuring a seamless user experience.</li>
+                                <li>Enabled PDF export, word/character count, and keyword search for efficient document handling.</li>
+                                <li>Developed functionality for managing user profiles, such as signup, login, activity tracking, and editable data.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                            <div class="one">
+                                <img src='https://placehold.co/180x120/f3f4f6/6b7280?text=CV+Object' class="project-preview" alt="CV Object Detection Preview">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big>Computer Vision Object Detection System</big></papertitle>
+                            <br>
+                            <p><em><a href="https://huggingface.co/spaces/Aumkeshchy2003/Object_Detection" target="_blank">[Link]</a></em></p>
+                            <p>Developed an object detection system utilizing YOLOv5 and PyTorch, designed to capture and process individual videos and photos for object detection.</p>
+                            <ul class="project-highlights">
+                                <li>Optimized the computer vision pipeline to achieve 20+ FPS processing speed for 640x640 input resolution.</li>
+                                <li>Created a visualization system to render detection results with color-coded bounding boxes and confidence scores ranging from 0 to 1.</li>
+                                <li>Applied non-maximum suppression with IoU threshold of 0.3 for optimal detection accuracy.</li>
+                                <li>Added support for over 80 COCO dataset object types, with confidence threshold filtering at 0.3.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                </tbody></table>
                 </div>
-                <div class="about-card">
-                    <h3 style="color: #9370DB; margin-bottom: 1rem;"> Philosophy</h3>
-                    <p>Driven by curiosity and guided by logic, I believe in learning through building, experimenting, and asking the right questions. Every problem is a puzzle waiting to be solved.</p>
+                <hr class="soft">
+
+                <!-- Skills & Extracurriculars -->
+                <button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-skills" id="skills"><heading>Technical Competence & Extracurricular</heading></button>
+                <div id="content-skills" class="collapse in">
+                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:top"><strong>Languages</strong></td>
+                        <td style="padding:10px;width:75%;">Python, Java, R, C, MATLAB</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:top"><strong>Web Development</strong></td>
+                        <td style="padding:10px;width:75%;">Django, Flask, Node.js, React, HTML/CSS/JS, Bootstrap</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:top"><strong>Databases & APIs</strong></td>
+                        <td style="padding:10px;width:75%;">MySQL, SQLite, MongoDB, REST APIs</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:top"><strong>Operating Systems</strong></td>
+                        <td style="padding:10px;width:75%;">Linux (Ubuntu), Windows, macOS</td>
+                    </tr>
+                    <tr><td colspan="2"><hr class="soft"></td></tr>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:top"><strong>Extracurricular</strong></td>
+                        <td style="padding:10px;width:75%;">
+                            <p><strong>🎹 Piano:</strong> 8+ years of experience in classical and contemporary styles. Actively compose original pieces that explore and innovate across diverse genres and elements of music.</p>
+                            <p><strong>🎸 Guitar:</strong> 2+ years of experience in Indian and western contemporary styles. Exploring fingerstyle techniques and songwriting.</p>
+                        </td>
+                    </tr>
+                </tbody></table>
                 </div>
-            </div>
-        </div>
-
-        <div class="section" id="education">
-            <h2 class="section-title"> Education</h2>
-            <div class="education-info">
-                <h3 style="color: #9370DB; font-size: 1.5rem; margin-bottom: 1rem;">Indian Institute of Technology, Patna</h3>
-                <p style="font-size: 1.2rem; color: #b19cd9; margin-bottom: 1rem;">Bachelor of Science (Honours) in Computer Science and Data Analytics</p>
-                <div class="cpi-badge">CPI: 9.12</div>
-            </div>
-        </div>
-
-        <div class="section" id="experience">
-            <h2 class="section-title">Work Experience</h2>
-            
-            <div class="experience-item">
-    <div class="experience-header">
-        <div>
-            <div class="experience-title">Research Intern</div>
-            <div class="experience-company">Ahmedabad University (On-site)</div>
-            <div style="color: #dda0dd; font-size: 0.9rem; margin-top: 0.5rem;">
-                Project: Understanding Decision Making and Coordination in Animal Groups<br>
-                Supervisor: Dr. Jitesh Jhawar — Funded by Max Planck Society, Germany<br>
-                Reports:
-                <a href="https://drive.google.com/file/d/1BAV-LsC4xHId8JBZ_cFqMg8L_z3SMCA6/view?usp=sharing"
-                   target="_blank" style="color:#dda0dd;">
-                    Technical Report I <i class="fas fa-file-pdf"></i>
-                </a>
-                |
-                <a href="https://drive.google.com/file/d/1Bow8RxgUqm9VcCOYfNAS4KCjMZLxMlVY/view?usp=sharing"
-                   target="_blank" style="color:#dda0dd;">
-                    Technical Report II <i class="fas fa-file-pdf"></i>
-                </a>
-            </div>
-        </div>
-        <div class="experience-date">May 2025 – June 2025</div>
-    </div>
-
-    <ul class="experience-points">
-        <li>Studied collective behavior in animal groups via simulations and mathematical modeling.</li>
-        <li>Configured a multi-user Linux workstation with fstab-based persistent disk mounting, user environment
-            management, and centralized Anaconda deployment for shared computational workflows.</li>
-        <li>Processed and annotated video data collected daily over 4 months, labeling frames with multiple bird species
-            for behavior and identity tagging.</li>
-        <li>Adapted and compared multiple YOLO architectures for multi-species bird detection and species-specific
-            behavior analysis.</li>
-        <li>Utilized Idtracker.ai to track ants and spiders, rendering trajectory data to visualize movement paths and
-            analyze spatiotemporal group dynamics.</li>
-    </ul>
-</div>
-
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <div class="experience-title">Project Intern</div>
-                        <div class="experience-company">IIT Mandi iHub and HCi Foundation (Remote)</div>
-                    </div>
-                    <div class="experience-date">Apr 2025 – July 2025</div>
-                </div>
-                <ul class="experience-points">
-                    <li>Developed backend infrastructure for an educational platform using Django, including role-based access
-                        control, REST APIs, and OAuth 2.0 authentication, supporting 1,000+ users across student and instructor
-                        workflows.</li>
-                    <li>Designed and implemented interactive dashboards for students and instructors, enabling activity tracking,
-                        course progress visualization, role-based permissions, and secure content access with separate workflows for
-                        each user type.</li>
-                    <li>Collaborated with cross-functional teams to architect scalable backend solutions and enforce security best
-                        practices across the platform.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section" id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="project-grid">
-
-
-         <!-- 1. Hybrid CNN + Vision Transformer for CIFAR-100 Classification -->
-
-         <div class="project-card">
-    <div class="project-title">
-        <a href="https://huggingface.co/spaces/Aumkeshchy2003/ViT-One110" 
-           class="project-link" target="_blank">
-            Progressive Token Drop: Training-Efficient Vision Transformers
-            <i class="fas fa-external-link-alt"></i>
-        </a>
-        <span class="project-links">
-            | 
-            <a href="https://drive.google.com/file/d/1crkAJ54UuwbTSGaemcSipbyl8p0HcysF/view?usp=sharing"
-               class="project-link" target="_blank">
-                Report <i class="fas fa-file-pdf"></i>
-            </a>
-        </span>
-    </div>
-
-    <div class="project-description">
-        Investigated Progressive Token Drop (PTD), a training-time strategy that progressively removes low-saliency
-        tokens based on attention weights, reducing training compute while preserving model architecture and
-        inference performance.
-    </div>
-
-    <ul class="project-highlights">
-        <li>
-            Trained hybrid CNN-ViT model from scratch on CIFAR-100 and applied PTD curriculum with Mixup/CutMix,
-            achieving 1.3× (25.3% faster) training speedup with 2.53% accuracy improvement
-            (74.12% vs 71.59% baseline), demonstrating efficiency gains with superior generalization
-            for compute-constrained training.
-        </li>
-        <li>
-            PTD significantly mitigated overfitting compared to the baseline, sustaining validation accuracy
-            under strong augmentations rather than memorizing the dataset.
-        </li>
-        <li>
-            Fine-tuned the model on CIFAR-10 and expanded the classifier to 110 classes, demonstrating scalable
-            architecture adaptation and robust cross-dataset generalization.
-        </li>
-    </ul>
-</div>
-
-
-
-        <!-- 2. Advanced TTS -->
-        <div class="project-card">
-            <div class="project-title">
-                <a href="https://huggingface.co/Aumkeshchy2003" class="project-link" target="_blank">
-                    Advanced Text to Speech Optimization
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-            <ul class="project-highlights">
-                <li>Fine-tuned Microsoft’s SpeechT5 transformer model for technical speech synthesis, achieving 25% improvement in Mean Opinion Score 
-                    through custom phonetic preprocessing pipeline for technical terms, abbreviations, and acronyms.</li>
-                <li>Optimized the baseline model to generate a native Italian voice by enhancing pronunciation, prosody, and
-                    stress patterns in line with the phonological rules of the Italian language, significantly improving speech
-                    quality and naturalness compared to other existing models.</li>
-                <li>Implemented 8-bit dynamic quantization to linear layers using PyTorch’s native API, reducing memory 
-                    usage by 30% while maintaining inference accuracy.</li>
-            </ul>
-        </div>
-
-                <!-- 3. Solar Panel Detection -->
-        <div class="project-card">
-            <div class="project-title">
-                <a href="https://huggingface.co/spaces/Aumkeshchy2003/Solar_Panel_detection" class="project-link" target="_blank">
-                    Solar Panel Detection System
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-            <ul class="project-highlights">
-                <li>Developed an object detection model using YOLOv8n to identify and locate solar panels in low resolution satellite imagery.</li>
-                <li>Achieved 94.27% precision, 91.77% recall, and 96.8% mean Average Precision (mAP50, significantly improving solar infrastructure mapping capabilities.</li>
-                <li>Applied Non-Maximum Suppression with IoU threshold of 0.3 for optimal detection accuracy.</li>
-            </ul>
-        </div>
-
-
-         <!-- 4. CareerNavigator -->
-
-
-         <div class="project-card">
-            <div class="project-title">
-                <a href="https://huggingface.co/spaces/Aumkeshchy2003/CareerNavigator" class="project-link" target="_blank">
-                    CareerNavigator
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-            <div class="project-description">
-                Developed CareerNavigator, a Machine Learning model that evaluates candidates' employability by analyzing key attributes and predicting suitability for a job role.
-            </div>
-            <ul class="project-highlights">
-                <li>Cleaned, pre-processed, and performed feature engineering on the dataset containing 70k+ datapoints.</li>
-                <li>Designed, trained, and evaluated multiple algorithms, utilizing performance metrics such as accuracy, confusion matrix, and F1-score to optimize model effectiveness.</li>
-                <li>Selected kernel support vector machine as the best-fit model with the highest accuracy of 80% and F1 score of 0.82.</li>
-                <li>Presented findings to a panel of faculty and industry experts, receiving recognition for its innovation and effectiveness.</li>
-            </ul>
-        </div>
-
-        <!-- 5. Hidden Project: AudeX -->
-        <div class= "project-card hidden-project" style="display: none;">
-            <div class="project-title">
-                <a href="https://aumkeshchaudhary.github.io/AudeX_web/" class="project-link" target="_blank">
-                    AudeX: Vision-to-Speech Model
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-            <div class="project-description">
-                Developed a dynamic web application combining Optical Character Recognition (OCR) and Text-to-Speech (TTS) technologies to improve accessibility.
-            </div>
-            <ul class="project-highlights">
-                <li>Integrated Tesseract for multi language OCR and Web Speech API for TTS, enabling accurate text extraction from images and high-quality text-to-speech conversion.</li>
-                <li>Designed a responsive interface with intuitive navigation, ensuring a seamless user experience.</li>
-                <li>Enabled PDF export, word/character count, and keyword search for efficient document handling.</li>
-                <li>Developed functionality for managing user profiles, such as signup, login, activity tracking, and editable data.</li>
-            </ul>
-        </div>
-     <div>
-
-        <!-- 6. Hidden Project: Object Detection System -->
-        <div class="project-card hidden-project" style="display: none;">
-            <div class="project-title">
-                <a href="https://huggingface.co/spaces/Aumkeshchy2003/Object_Detection" class="project-link" target="_blank">
-                    Computer Vision Object Detection System
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-            <div class="project-description">
-                Developed an object detection system utilizing YOLOv5 and PyTorch, designed to capture and process individual videos and photos for object detection.
-            </div>
-            <ul class="project-highlights">
-                <li>Optimized the computer vision pipeline to achieve 20+ FPS processing speed for 640x640 input resolution.</li>
-                <li>Created a visualization system to render detection results with color-coded bounding boxes and confidence scores ranging from 0 to 1.</li>
-                <li>Applied non-maximum suppression with IoU threshold of 0.3 for optimal detection accuracy.</li>
-                <li>Added support for over 80 COCO dataset object types, with confidence threshold filtering at 0.3.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Show More Button -->
-    <div style="text-align: center; margin-top: 1rem;">
-    <button onclick="toggleMoreProjects()" style="background-color: #9370DB; color: black; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer;">
-        <i class="fas fa-chevron-down"></i> Show More
-    </button>
-</div>
-</div>
-
-<script>
-function toggleMoreProjects() {
-    const hiddenProjects = document.querySelectorAll('.hidden-project');
-    hiddenProjects.forEach(el => {
-        el.style.display = (el.style.display === 'none') ? 'block' : 'none';
-    });
-
-    const button = event.currentTarget;
-    const isShowing = button.innerText.includes('Show Less');
-    button.innerHTML = isShowing 
-        ? '<i class="fas fa-chevron-down"></i> Show More'
-        : '<i class="fas fa-chevron-up"></i> Show Less';
-}
-</script>
-
-
-        <div class="section" id="extracurricular">
-            <h2 class="section-title"> Extracurricular Activities</h2>
-            <div class="about-grid">
-                <div class="extracurricular-card">
-                    <h3 style="color: #9370DB; margin-bottom: 1rem;">🎹 Piano</h3>
-                    <p>8+ years of experience in classical and contemporary styles. Actively compose original pieces that explore and innovate across diverse genres and elements of music.</p>
-                </div>
-                <div class="extracurricular-card">
-                    <h3 style="color: #9370DB; margin-bottom: 1rem;">🎸 Guitar</h3>
-                    <p>2+ years of experience in Indian and western contemporary styles. Exploring fingerstyle techniques and songwriting.</p>
-                </div>
-            </div>
-        </div>
-
-       <div class="section" id="skills">
-    <h2 class="section-title">Technical Competence</h2>
-    
-    <div class="skills-category"><strong>Languages</strong></div>
-    <div class="skills-grid">
-        <div class="skill-item"><div class="skill-icon"><i class="fab fa-python"></i></div>Python</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fab fa-java"></i></div>Java</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fas fa-chart-line"></i></div>R</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fas fa-code"></i></div>C</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fas fa-vials"></i></div>MATLAB</div>
-    </div>
-
-    <div class="skills-category"><strong>Web Development</strong></div>
-    <div class="skills-grid">
-        <div class="skill-item"><div class="skill-icon"><i class="fas fa-globe"></i></div>Django</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fas fa-fire"></i></div>Flask</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fab fa-node-js"></i></div>Node.js</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fab fa-react"></i></div>React</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fab fa-html5"></i></div>HTML/CSS/JS</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fab fa-bootstrap"></i></div>Bootstrap</div>
-    </div>
-
-    <div class="skills-category"><strong>Databases & APIs</strong></div>
-    <div class="skills-grid">
-        <div class="skill-item"><div class="skill-icon"><i class="fas fa-database"></i></div>MySQL</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fas fa-table"></i></div>SQLite</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fas fa-leaf"></i></div>MongoDB</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fas fa-plug"></i></div>REST APIs</div>
-    </div>
-
-    <div class="skills-category"><strong>Operating Systems</strong></div>
-    <div class="skills-grid">
-        <div class="skill-item"><div class="skill-icon"><i class="fab fa-linux"></i></div>Linux (Ubuntu)</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fab fa-windows"></i></div>Windows</div>
-        <div class="skill-item"><div class="skill-icon"><i class="fab fa-apple"></i></div>macOS</div>
-    </div>
-
-</div>
-
-
-         <div class="section" id="contact">
-    <h2 class="section-title">🌐 Connect with Me</h2>
-    <div class="contact-grid">
-        <a href="mailto:aumkeshchaudhary@gmail.com" class="contact-link">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">
-                <i class="fas fa-envelope"></i>
-            </div>
-            <div>Email</div>
-        </a>
-        <a href="https://www.linkedin.com/in/aumkesh-chaudhary-03bba5271/" class="contact-link" target="_blank">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">
-                <i class="fab fa-linkedin"></i>
-            </div>
-            <div>LinkedIn</div>
-        </a>
-        <a href="https://github.com/aumkeshchaudhary" class="contact-link" target="_blank">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">
-                <i class="fab fa-github"></i>
-            </div>
-            <div>GitHub</div>
-        </a>
-        </a>
-        <a href="https://www.youtube.com/channel/UCxTnnRfzgNRCEWhBK2a79sg" class="contact-link" target="_blank">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">
-                <i class="fab fa-youtube"></i>
-            </div>
-            <div>YouTube</div>
-        </a>
-    </div>
-</div>
-<div class="quote">
-            The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.
-            <br><br>
-            <em>— Albert Einstein</em>
-        </div>
-    </div>
-
-    <!-- Floating elements and scripts -->
-    <div class="floating-element floating-orb" style="top: 10%; left: 10%;"></div>
-    <div class="floating-element floating-orb" style="top: 60%; right: 10%; animation-delay: -2s;"></div>
-    <div class="floating-element floating-orb" style="bottom: 20%; left: 20%; animation-delay: -4s;"></div>
-
-    <script>
-        // Menu handling for CV/Transcript dropdown
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuBarBtn = document.getElementById('menuBarBtn');
-            const menuBarDropdown = document.getElementById('menuBarDropdown');
-
-            if (menuBarBtn && menuBarDropdown) {
-                // Toggle dropdown
-                menuBarBtn.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    menuBarDropdown.classList.toggle('show');
-                    menuBarBtn.classList.toggle('active');
-                });
-
-                // Close dropdown when clicking outside
-                document.addEventListener('click', function(e) {
-                    if (!menuBarDropdown.contains(e.target) && !menuBarBtn.contains(e.target)) {
-                        menuBarDropdown.classList.remove('show');
-                    }
-                });
-
-                // Close on scroll
-                window.addEventListener('scroll', function() {
-                    menuBarDropdown.classList.remove('show');
-                });
-
-                // Close on resize
-                window.addEventListener('resize', function() {
-                    menuBarDropdown.classList.remove('show');
-                });
-            }
-        });
-
-        // Rest of your existing scripts
-        // ...existing code...
-        (() => {
-    const toggleBtn = document.querySelector('.toggle-button');
-    const menu = document.querySelector('.menu-items');
-
-    function toggleMenu(e) {
-        e.stopPropagation();
-        toggleBtn.classList.toggle('active');
-        menu.classList.toggle('active');
-    }
-
-    function closeMenu() {
-        toggleBtn.classList.remove('active');
-        menu.classList.remove('active');
-    }
-
-    function closeMenuOnClickOutside(e) {
-        if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
-            closeMenu();
-        }
-    }
-
-    function closeMenuOnVisibilityChange() {
-        if (document.hidden) {
-            closeMenu();
-        }
-    }
-
-    function initMenuToggle() {
-        if (!toggleBtn || !menu) return;
-
-        toggleBtn.addEventListener('click', toggleMenu);
-        document.addEventListener('click', closeMenuOnClickOutside);
-
-        // Close on scroll
-        window.addEventListener('scroll', closeMenu);
-
-        // Close on tab switch
-        document.addEventListener('visibilitychange', closeMenuOnVisibilityChange);
-
-        // Optional: close on window resize
-        window.addEventListener('resize', closeMenu);
-    }
-
-    document.addEventListener('DOMContentLoaded', initMenuToggle);
-})();
- 
-   
-        
-        function createStars() {
-            const starsContainer = document.querySelector('.stars');
-            for (let i = 0; i < 100; i++) {
-                const star = document.createElement('div');
-                star.className = 'star';
-                star.style.left = Math.random() * 100 + '%';
-                star.style.top = Math.random() * 100 + '%';
-                star.style.animationDelay = Math.random() * 3 + 's';
-                starsContainer.appendChild(star);
-            }
-        }
-
-        function typeText() {
-            const texts = [
-                "Aspiring Researcher | Analytical Thinker",
-                "ML | AI | Mathematical Modeling",
-                "Exploring Intelligence Through Computation",
-                "Researching AI Systems for Real-World Impact"
-            ];
-            let textIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
-            const typingElement = document.getElementById('typing-text');
-
-            function type() {
-                const currentText = texts[textIndex];
-
-                if (isDeleting) {
-                    typingElement.textContent = currentText.substring(0, charIndex - 1);
-                    charIndex--;
-                } else {
-                    typingElement.textContent = currentText.substring(0, charIndex + 1);
-                    charIndex++;
-                }
-
-                if (!isDeleting && charIndex === currentText.length) {
-                    setTimeout(() => isDeleting = true, 2000);
-                } else if (isDeleting && charIndex === 0) {
-                    isDeleting = false;
-                    textIndex = (textIndex + 1) % texts.length;
-                }
-
-                setTimeout(type, isDeleting ? 50 : 100);
-            }
-
-            type();
-        }
-
-        function createParticles() {
-            for (let i = 0; i < 20; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 5 + 's';
-                document.body.appendChild(particle);
-
-                let x = Math.random() * window.innerWidth;
-                let y = Math.random() * window.innerHeight;
-                let vx = (Math.random() - 0.5) * 2;
-                let vy = (Math.random() - 0.5) * 2;
-
-                function animateParticle() {
-                    x += vx;
-                    y += vy;
-
-                    if (x < 0 || x > window.innerWidth) vx *= -1;
-                    if (y < 0 || y > window.innerHeight) vy *= -1;
-
-                    particle.style.left = x + 'px';
-                    particle.style.top = y + 'px';
-
-                    requestAnimationFrame(animateParticle);
-                }
-
-                animateParticle();
-            }
-        }
-
-        document.addEventListener('mousemove', (e) => {
-            const cursor = document.createElement('div');
-            cursor.style.position = 'fixed';
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-            cursor.style.width = '10px';
-            cursor.style.height = '10px';
-            cursor.style.background = 'rgba(138, 43, 226, 0.5)';
-            cursor.style.borderRadius = '50%';
-            cursor.style.pointerEvents = 'none';
-            cursor.style.zIndex = '1000';
-            cursor.style.animation = 'fade-out 1s ease-out forwards';
-            document.body.appendChild(cursor);
-
-            setTimeout(() => {
-                cursor.remove();
-            }, 1000);
-        });
-
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes fade-out {
-                from { opacity: 1; transform: scale(1); }
-                to { opacity: 0; transform: scale(0); }
-            }
-        `;
-        document.head.appendChild(style);
-
-        createStars();
-        typeText();
-        createParticles();
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        });
-
-        document.querySelectorAll('.section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
-        });
-    </script>
-
-    <!-- Footer -->
-    <footer style="width:100%; background:rgba(20,20,20,0.95); border-top:1px solid rgba(138,43,226,0.3); padding:1rem 0; text-align:center; margin-top:2rem; font-size:1rem; color:#b19cd9;">
-        &copy; 2025 Aumkesh Chaudhary &mdash; Made with <i class="fas fa-heart" style="color:#9370DB;"></i> | <a href="mailto:aumkeshchaudhary@gmail.com" style="color:#dda0dd; text-decoration:none;">Contact</a>
-    </footer>
+                <hr class="soft">
+
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; padding: 40px 0 20px 0;">
+                <p style="font-style: italic; color: #555;">"The most beautiful thing we can experience is the mysterious. It is the source of all true art and science."<br>— Albert Einstein</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <p>&copy; 2026 Aumkesh Chaudhary</p>
+                <p>Adapted from Jon Barron's <a href="https://jonbarron.info/" target="_blank">website</a> template style.</p>
+            </td>
+        </tr>
+    </tbody></table>
 </body>
 </html>
