@@ -143,6 +143,15 @@
             filter: brightness(1.05) contrast(1.1);
         }
 
+        /* White background for logos with transparent backgrounds in dark mode */
+        img[src*="Indian_Institute_of_Technology__Patna"],
+        img[src*="adhuni-Photoroom"] {
+            background-color: white;
+            padding: 8px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, padding 0.3s ease;
+        }
+
         .about-narrative {
             background: var(--bg-secondary);
             padding: 2.5rem;
