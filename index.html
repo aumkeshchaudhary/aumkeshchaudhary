@@ -282,8 +282,86 @@
             }
         }
 
-        /* Mobile responsive adjustments */
+        /* =========================================================
+           MOBILE RESPONSIVE STYLES
+           The layout below is table-based, so on small screens we
+           force every layout table/row/cell to stack vertically
+           using the classes added to each <td> in the markup.
+           ========================================================= */
+
+        /* Tablet and below */
         @media (max-width: 768px) {
+            .page-wrapper {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0 4% !important;
+            }
+
+            /* Any row that's been marked as stackable collapses into a
+               single column, full width, centered content */
+            .stack-row {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .stack-cell {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box;
+                text-align: center !important;
+                padding: 10px 4% !important;
+                vertical-align: top !important;
+            }
+
+            /* Spacer column used for whitespace on desktop isn't needed on mobile */
+            .spacer-cell {
+                display: none !important;
+            }
+
+            /* Profile image + logos: smaller and centered */
+            img[alt="profile photo"] {
+                width: 110px !important;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .logo-image {
+                width: 100px !important;
+                margin: 0 auto;
+                display: block;
+            }
+
+            h1 {
+                font-size: 26px !important;
+            }
+
+            heading {
+                font-size: 20px;
+            }
+
+            .about-narrative {
+                padding: 1.25rem !important;
+                font-size: 1rem !important;
+                line-height: 1.65;
+            }
+
+            /* Nav links wrap more tightly and stay legible */
+            p[style*="text-align:center"] {
+                font-size: 14px;
+                line-height: 2;
+            }
+
+            /* Project preview thumbnails: smaller so they don't dominate the stacked layout */
+            .project-preview {
+                max-width: 140px;
+            }
+
+            ul.experience-points, ul.project-highlights {
+                text-align: left;
+                padding-left: 24px;
+            }
+
             .dark-mode-toggle {
                 width: 45px;
                 height: 45px;
@@ -291,10 +369,29 @@
                 top: 15px;
                 right: 15px;
             }
+        }
+
+        /* Small phones */
+        @media (max-width: 420px) {
+            h1 {
+                font-size: 22px !important;
+            }
 
             .about-narrative {
-                padding: 1.5rem;
-                font-size: 1.05rem;
+                font-size: 0.95rem !important;
+                padding: 1rem !important;
+            }
+
+            .stack-cell {
+                padding: 8px 3% !important;
+            }
+
+            img[alt="profile photo"] {
+                width: 90px !important;
+            }
+
+            .logo-image {
+                width: 80px !important;
             }
         }
     </style>
@@ -303,18 +400,18 @@
     <!-- Dark Mode Toggle Button -->
     <button class="dark-mode-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
 
-    <table border=0 class="bg_colour" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table border=0 class="bg_colour page-wrapper" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr style="padding:0px">
             <td style="padding:0px">
                 
                 <!-- Name tab -->
                 <table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                    <tr style="padding:0px">
-                        <td style="padding:2.5%;width:20%;max-width:20%">
+                    <tr style="padding:0px" class="stack-row">
+                        <td style="padding:2.5%;width:20%;max-width:20%" class="stack-cell">
                             <!-- Profile Image Placeholder -->
                             <img style="width:150px; border-radius: 20%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" alt="profile photo" src="aumkesh.jpeg">
                         </td>
-                        <td style="padding:2.5%;width:60%;vertical-align:middle">
+                        <td style="padding:2.5%;width:60%;vertical-align:middle" class="stack-cell">
                             <p style="text-align:center">
                                 <h1 style="text-align:center"><name>Aumkesh Chaudhary</name></h1>
                                 <p style="text-align:center; color:var(--text-secondary); font-size: 16px;">Researcher in Machine Learning and Applied AI</p>
@@ -333,7 +430,7 @@
                                 &nbsp;|&nbsp;
                             </p>
                         </td>
-                        <td style="padding:2.5%;width:10%;max-width:10%"></td>
+                        <td style="padding:2.5%;width:10%;max-width:10%" class="spacer-cell"></td>
                     </tr>
                 </tbody></table>
 
@@ -370,13 +467,13 @@
                 <button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-education" id="education"><heading>Education</heading></button>
                 <div id="content-education" class="collapse in">
                 <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='Indian_Institute_of_Technology__Patna-removebg-preview.png' width="130" class="side-image logo-image" alt="IIT Patna Logo">
                             </div>
                         </td>
-                        <td style="padding:10px;width:75%;vertical-align:top">
+                        <td style="padding:10px;width:75%;vertical-align:top" class="stack-cell">
                             <papertitle><big>Indian Institute of Technology, Patna</big></papertitle>
                             <br>
                             <papertitle style="color:var(--text-secondary);"><big>Bachelor of Science (Honours) in </big></papertitle><papertitle><big>Computer Science and Data Analytics</big></papertitle>
@@ -394,13 +491,13 @@
                 <div id="content-experience" class="collapse in">
                 <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top: 10px;"><tbody>
                     
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='IISc_Master_Seal_Black.jpg' style="width: 150px;" class="side-image logo-image" alt="IISc Logo">
                             </div>
                         </td>
-                        <td style="padding:10px;width:75%;vertical-align:middle">
+                        <td style="padding:10px;width:75%;vertical-align:middle" class="stack-cell">
                             <papertitle style="color:var(--text-secondary);"><big>Research Intern</big> </papertitle> <papertitle><big> | Indian Institute of Science (IISc) (On-site)</big></papertitle>
                             <br>
                             <span style="color:var(--text-secondary);">March 2026 – Present</span>
@@ -417,13 +514,13 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='adhuni-Photoroom.png' style="width: 230px;" class="side-image logo-image" alt="Ahmedabad University Logo">
                             </div>
                         </td>
-                        <td style="padding:10px;width:75%;vertical-align:middle">
+                        <td style="padding:10px;width:75%;vertical-align:middle" class="stack-cell">
                             <papertitle style="color:var(--text-secondary);"><big>Research Intern</big> </papertitle> <papertitle><big> | Ahmedabad University (On-site)</big></papertitle>
                             <br>
                             <span style="color:var(--text-secondary);">May 2025 – June 2025</span>
@@ -449,13 +546,13 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='iit-mandi-01.jpg' style="width: 170px;" class="side-image logo-image" alt="IIT Mandi Logo">
                             </div>
                         </td>
-                        <td style="padding:10px;width:75%;vertical-align:middle">
+                        <td style="padding:10px;width:75%;vertical-align:middle" class="stack-cell">
                             <papertitle style="color:var(--text-secondary);"><big>Project Intern</big> </papertitle> <papertitle><big> | IIT Mandi iHub and HCi Foundation (Remote)</big></papertitle>
                             <br>
                             <span style="color:var(--text-secondary);">Apr 2025 – July 2025</span>
@@ -476,13 +573,13 @@
                 <div id="content-projects" class="collapse in">
                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                     
-                    <tr>
-                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='NeuralFlora.jpg' width="130" class="project-preview" alt="NeuralFlora Preview">
                             </div>
                         </td>
-                        <td style="padding:20px;width:75%;vertical-align:top">
+                        <td style="padding:20px;width:75%;vertical-align:top" class="stack-cell">
                             <papertitle><big>NeuralFlora: A Multimodal System for Plant Disease Diagnosis</big></papertitle>
                             <br>
                             <p style="color:var(--text-secondary);">
@@ -499,13 +596,13 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='510090714-611f1c4c-eddd-4dbd-b452-759417d71582.png' class="project-preview" alt="PTD ViT Preview">
                             </div>
                         </td>
-                        <td style="padding:20px;width:75%;vertical-align:top">
+                        <td style="padding:20px;width:75%;vertical-align:top" class="stack-cell">
                             <papertitle><big>Progressive Token Drop: Training-Efficient Vision Transformers</big></papertitle>
                             <br>
                             <p style="color:var(--text-secondary);">
@@ -521,13 +618,13 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='TTS.jpeg' class="project-preview" alt="TTS Preview">
                             </div>
                         </td>
-                        <td style="padding:20px;width:75%;vertical-align:top">
+                        <td style="padding:20px;width:75%;vertical-align:top" class="stack-cell">
                             <papertitle><big>Advanced Text to Speech Optimization</big></papertitle>
                             <br>
                             <p style="color:var(--text-secondary);"><em><a href="https://huggingface.co/Aumkeshchy2003" target="_blank">[Link]</a></em></p>
@@ -539,13 +636,13 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='solarpanel.jpeg' class="project-preview" alt="Solar Panel Detection Preview">
                             </div>
                         </td>
-                        <td style="padding:20px;width:75%;vertical-align:top">
+                        <td style="padding:20px;width:75%;vertical-align:top" class="stack-cell">
                             <papertitle><big>Solar Panel Detection System</big></papertitle>
                             <br>
                             <p style="color:var(--text-secondary);"><em><a href="https://huggingface.co/spaces/Aumkeshchy2003/Solar_Panel_detection" target="_blank">[Link]</a></em></p>
@@ -557,13 +654,13 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='objectdetection.jpeg' class="project-preview" alt="CV Object Detection Preview">
                             </div>
                         </td>
-                        <td style="padding:20px;width:75%;vertical-align:top">
+                        <td style="padding:20px;width:75%;vertical-align:top" class="stack-cell">
                             <papertitle><big>Computer Vision Object Detection System</big></papertitle>
                             <br>
                             <p style="color:var(--text-secondary);"><em><a href="https://huggingface.co/spaces/Aumkeshchy2003/Object_Detection" target="_blank">[Link]</a></em></p>
@@ -577,13 +674,13 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                    <tr class="stack-row">
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='Audex.jpeg' class="project-preview" alt="AudeX Preview">
                             </div>
                         </td>
-                        <td style="padding:20px;width:75%;vertical-align:top">
+                        <td style="padding:20px;width:75%;vertical-align:top" class="stack-cell">
                             <papertitle><big>AudeX: Vision-to-Speech Model</big></papertitle>
                             <br>
                             <p style="color:var(--text-secondary);"><em><a href="https://aumkeshchaudhary.github.io/AudeX_web/" target="_blank">[Link]</a></em></p>
@@ -597,13 +694,13 @@
                         </td>
                     </tr>
 
-                     <tr>
-                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                     <tr class="stack-row">
+                        <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;" class="stack-cell">
                             <div class="one">
                                 <img src='CareerNavigator.jpeg' class="project-preview" alt="CareerNavigator Preview">
                             </div>
                         </td>
-                        <td style="padding:20px;width:75%;vertical-align:top">
+                        <td style="padding:20px;width:75%;vertical-align:top" class="stack-cell">
                             <papertitle><big>CareerNavigator</big></papertitle>
                             <br>
                             <p style="color:var(--text-secondary);"><em><a href="https://huggingface.co/spaces/Aumkeshchy2003/CareerNavigator" target="_blank">[Link]</a></em></p>
@@ -626,9 +723,9 @@
                 <button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-skills" id="skills"><heading>Extracurricular Activities</heading></button>
                 <div id="content-skills" class="collapse in">
                 <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-                    <tr>
-                        <td style="padding:10px;width:25%;vertical-align:top"><strong>Extracurricular</strong></td>
-                        <td style="padding:10px;width:75%;">
+                    <tr class="stack-row">
+                        <td style="padding:10px;width:25%;vertical-align:top" class="stack-cell"><strong>Extracurricular</strong></td>
+                        <td style="padding:10px;width:75%;" class="stack-cell">
                             <p style="color:var(--text-secondary);"><strong> Piano:</strong> 8+ years of experience in classical and contemporary styles, deeply inspired by the works of Beethoven and Chopin. Actively compose original pieces that explore and innovate across diverse genres and elements of music. You can find some of my performances and compositions on my <a href="https://www.youtube.com/channel/UCxTnnRfzgNRCEWhBK2a79sg" target="_blank">YouTube channel</a>.</p>
                             <p style="color:var(--text-secondary);"><strong> Guitar:</strong> 2+ years of experience in Indian and western contemporary styles. Exploring fingerstyle techniques and songwriting.</p>
                         </td>
